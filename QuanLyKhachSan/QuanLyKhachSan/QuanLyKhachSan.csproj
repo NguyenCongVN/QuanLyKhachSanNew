@@ -85,6 +85,12 @@
     <Compile Include="GUI\frmManagerialCustomer.Designer.cs">
       <DependentUpon>frmManagerialCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmManagerialEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmManagerialEmp.Designer.cs">
+      <DependentUpon>frmManagerialEmp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\frmHome.resx">
