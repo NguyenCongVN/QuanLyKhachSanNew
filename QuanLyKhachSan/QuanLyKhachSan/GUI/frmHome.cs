@@ -130,8 +130,8 @@ namespace QuanLyKhachSan.GUI
 
         private void btn_ManagerialEmp_Click(object sender, EventArgs e)
         {
-            //frmManagerialEmp a = new frmManagerialEmp();
-            //a.Show();
+            frmManagerialEmp a = new frmManagerialEmp();
+            a.Show();
         }
 
         private void btn_ManagerialService_Click(object sender, EventArgs e)
