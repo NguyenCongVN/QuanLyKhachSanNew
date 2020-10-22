@@ -38,8 +38,6 @@
             this.btn_exit = new Bunifu.Framework.UI.BunifuImageButton();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.thongtindichvu = new System.Windows.Forms.GroupBox();
-            this.txtMaloaidichvu = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.txtgia = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.txtloaidichvu = new Guna.UI.WinForms.GunaTextBox();
@@ -56,7 +54,6 @@
             this.gunaTextBox4 = new Guna.UI.WinForms.GunaTextBox();
             this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.btnLuu = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel_control.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.thongtindichvu.SuspendLayout();
@@ -114,8 +111,6 @@
             // 
             // thongtindichvu
             // 
-            this.thongtindichvu.Controls.Add(this.txtMaloaidichvu);
-            this.thongtindichvu.Controls.Add(this.gunaLabel3);
             this.thongtindichvu.Controls.Add(this.txtgia);
             this.thongtindichvu.Controls.Add(this.gunaLabel2);
             this.thongtindichvu.Controls.Add(this.txtloaidichvu);
@@ -132,35 +127,6 @@
             this.thongtindichvu.TabIndex = 23;
             this.thongtindichvu.TabStop = false;
             this.thongtindichvu.Text = "Thông tin dịch vụ";
-            // 
-            // txtMaloaidichvu
-            // 
-            this.txtMaloaidichvu.BaseColor = System.Drawing.Color.White;
-            this.txtMaloaidichvu.BorderColor = System.Drawing.Color.Silver;
-            this.txtMaloaidichvu.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMaloaidichvu.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtMaloaidichvu.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.txtMaloaidichvu.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtMaloaidichvu.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaloaidichvu.ForeColor = System.Drawing.Color.Black;
-            this.txtMaloaidichvu.Location = new System.Drawing.Point(21, 255);
-            this.txtMaloaidichvu.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMaloaidichvu.Name = "txtMaloaidichvu";
-            this.txtMaloaidichvu.PasswordChar = '\0';
-            this.txtMaloaidichvu.Size = new System.Drawing.Size(204, 38);
-            this.txtMaloaidichvu.TabIndex = 32;
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.gunaLabel3.Location = new System.Drawing.Point(18, 234);
-            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(100, 17);
-            this.gunaLabel3.TabIndex = 31;
-            this.gunaLabel3.Text = "Mã loại dịch vụ";
             // 
             // txtgia
             // 
@@ -201,7 +167,7 @@
             this.txtloaidichvu.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtloaidichvu.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtloaidichvu.ForeColor = System.Drawing.Color.Black;
-            this.txtloaidichvu.Location = new System.Drawing.Point(21, 194);
+            this.txtloaidichvu.Location = new System.Drawing.Point(21, 228);
             this.txtloaidichvu.Margin = new System.Windows.Forms.Padding(2);
             this.txtloaidichvu.Name = "txtloaidichvu";
             this.txtloaidichvu.PasswordChar = '\0';
@@ -213,12 +179,12 @@
             this.gunaLabel9.AutoSize = true;
             this.gunaLabel9.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.gunaLabel9.Location = new System.Drawing.Point(18, 175);
+            this.gunaLabel9.Location = new System.Drawing.Point(18, 209);
             this.gunaLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel9.Name = "gunaLabel9";
-            this.gunaLabel9.Size = new System.Drawing.Size(102, 17);
+            this.gunaLabel9.Size = new System.Drawing.Size(87, 17);
             this.gunaLabel9.TabIndex = 27;
-            this.gunaLabel9.Text = "Tên loại dịch vụ";
+            this.gunaLabel9.Text = "Loại dịch vụ :";
             // 
             // txttendichvu
             // 
@@ -230,7 +196,7 @@
             this.txttendichvu.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txttendichvu.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttendichvu.ForeColor = System.Drawing.Color.Black;
-            this.txttendichvu.Location = new System.Drawing.Point(21, 126);
+            this.txttendichvu.Location = new System.Drawing.Point(21, 142);
             this.txttendichvu.Margin = new System.Windows.Forms.Padding(2);
             this.txttendichvu.Name = "txttendichvu";
             this.txttendichvu.PasswordChar = '\0';
@@ -242,7 +208,7 @@
             this.gunaLabel7.AutoSize = true;
             this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.gunaLabel7.Location = new System.Drawing.Point(18, 107);
+            this.gunaLabel7.Location = new System.Drawing.Point(18, 123);
             this.gunaLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel7.Name = "gunaLabel7";
             this.gunaLabel7.Size = new System.Drawing.Size(84, 17);
@@ -342,8 +308,6 @@
             this.showDataService.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
             this.showDataService.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.showDataService.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.showDataService_CellContentClick);
-            this.showDataService.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.showDataService_CellContentClick);
-            this.showDataService.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.showDataService_CellContentClick);
             // 
             // btnThem
             // 
@@ -374,7 +338,7 @@
             this.btnThem.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.btnThem.OnHoverTextColor = System.Drawing.Color.White;
             this.btnThem.selected = false;
-            this.btnThem.Size = new System.Drawing.Size(161, 38);
+            this.btnThem.Size = new System.Drawing.Size(204, 38);
             this.btnThem.TabIndex = 35;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -404,14 +368,14 @@
             this.btnXoa.IconVisible = false;
             this.btnXoa.IconZoom = 40D;
             this.btnXoa.IsTab = true;
-            this.btnXoa.Location = new System.Drawing.Point(405, 449);
+            this.btnXoa.Location = new System.Drawing.Point(502, 448);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btnXoa.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.btnXoa.OnHoverTextColor = System.Drawing.Color.White;
             this.btnXoa.selected = false;
-            this.btnXoa.Size = new System.Drawing.Size(145, 38);
+            this.btnXoa.Size = new System.Drawing.Size(204, 38);
             this.btnXoa.TabIndex = 36;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -476,20 +440,19 @@
             this.btnSua.IconVisible = false;
             this.btnSua.IconZoom = 40D;
             this.btnSua.IsTab = true;
-            this.btnSua.Location = new System.Drawing.Point(207, 449);
+            this.btnSua.Location = new System.Drawing.Point(254, 448);
             this.btnSua.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnSua.Name = "btnSua";
             this.btnSua.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btnSua.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.btnSua.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSua.selected = false;
-            this.btnSua.Size = new System.Drawing.Size(149, 38);
+            this.btnSua.Size = new System.Drawing.Size(204, 38);
             this.btnSua.TabIndex = 38;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSua.Textcolor = System.Drawing.Color.White;
             this.btnSua.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // gunaTextBox4
             // 
@@ -548,50 +511,12 @@
             // 
             this.gunaDragControl1.TargetControl = this.panel_control;
             // 
-            // btnLuu
-            // 
-            this.btnLuu.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
-            this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
-            this.btnLuu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLuu.BorderRadius = 0;
-            this.btnLuu.ButtonText = "Lưu";
-            this.btnLuu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLuu.DisabledColor = System.Drawing.Color.Gray;
-            this.btnLuu.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnLuu.Iconimage = null;
-            this.btnLuu.Iconimage_right = null;
-            this.btnLuu.Iconimage_right_Selected = null;
-            this.btnLuu.Iconimage_Selected = null;
-            this.btnLuu.IconMarginLeft = 0;
-            this.btnLuu.IconMarginRight = 0;
-            this.btnLuu.IconRightVisible = false;
-            this.btnLuu.IconRightZoom = 0D;
-            this.btnLuu.IconVisible = false;
-            this.btnLuu.IconZoom = 40D;
-            this.btnLuu.IsTab = true;
-            this.btnLuu.Location = new System.Drawing.Point(582, 448);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
-            this.btnLuu.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
-            this.btnLuu.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnLuu.selected = false;
-            this.btnLuu.Size = new System.Drawing.Size(145, 38);
-            this.btnLuu.TabIndex = 41;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnLuu.Textcolor = System.Drawing.Color.White;
-            this.btnLuu.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
             // frmManagerialService
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(962, 502);
-            this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.bunifuFlatButton5);
             this.Controls.Add(this.gunaTextBox4);
             this.Controls.Add(this.btnSua);
@@ -639,8 +564,5 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnXoa;
         private Bunifu.Framework.UI.BunifuFlatButton btnThem;
         private Guna.UI.WinForms.GunaDragControl gunaDragControl1;
-        private Bunifu.Framework.UI.BunifuFlatButton btnLuu;
-        private Guna.UI.WinForms.GunaTextBox txtMaloaidichvu;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
     }
 }
