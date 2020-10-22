@@ -32,6 +32,15 @@ namespace QuanLyKhachSan.GUI
             this.hideMenu();
             tc_Menu_second.SelectedTab = noneContent;
             tc_Content_Seclect.SelectedTab = tabNoneContent;
+            if(frmLogin.checkLogin == 1)
+            {
+                MessageBox.Show("Đăng nhập thành công");
+            }
+            else
+            {
+                MessageBox.Show("Lỗi");
+                this.Close();
+            }
         }
         private void initData(string query, GunaDataGridView showData)
         {
