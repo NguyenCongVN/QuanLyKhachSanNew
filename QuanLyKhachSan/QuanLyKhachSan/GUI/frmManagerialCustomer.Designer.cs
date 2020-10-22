@@ -40,7 +40,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.Nam = new System.Windows.Forms.RadioButton();
-            this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
+            
             this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
             this.gunaTextBox5 = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
@@ -66,7 +66,7 @@
             this.panel_control.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
+            
             ((System.ComponentModel.ISupportInitialize)(this.showDataRoom)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,7 +127,7 @@
             this.groupBox2.Controls.Add(this.gunaLabel2);
             this.groupBox2.Controls.Add(this.radioButton1);
             this.groupBox2.Controls.Add(this.Nam);
-            this.groupBox2.Controls.Add(this.radioGroup1);
+            
             this.groupBox2.Controls.Add(this.gunaLabel10);
             this.groupBox2.Controls.Add(this.gunaTextBox5);
             this.groupBox2.Controls.Add(this.gunaLabel9);
@@ -169,14 +169,7 @@
             this.Nam.TabStop = true;
             this.Nam.Text = "Nam";
             this.Nam.UseVisualStyleBackColor = true;
-            // 
-            // radioGroup1
-            // 
-            this.radioGroup1.Location = new System.Drawing.Point(19, 145);
-            this.radioGroup1.Name = "radioGroup1";
-            this.radioGroup1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.radioGroup1.Size = new System.Drawing.Size(204, 39);
-            this.radioGroup1.TabIndex = 30;
+           
             // 
             // gunaLabel10
             // 
@@ -678,7 +671,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).EndInit();
+            
             ((System.ComponentModel.ISupportInitialize)(this.showDataRoom)).EndInit();
             this.ResumeLayout(false);
 
@@ -697,7 +690,7 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton Nam;
-        private DevExpress.XtraEditors.RadioGroup radioGroup1;
+        
         private Guna.UI.WinForms.GunaLabel gunaLabel10;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox5;
         private Guna.UI.WinForms.GunaLabel gunaLabel9;
