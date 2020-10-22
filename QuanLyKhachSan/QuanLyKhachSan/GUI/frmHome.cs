@@ -91,32 +91,30 @@ namespace QuanLyKhachSan.GUI
         {
             tc_Menu_second.SelectedTab = tab3;
             tc_Content_Seclect.SelectedTab = tabBill;
+            string query = " exec USP_LoadFULLBILL";
+
+            initData(query, showdataBill);
         }
 
         private void btn_Sevice_Click(object sender, EventArgs e)
         {
             tc_Menu_second.SelectedTab = tab4;
             tc_Content_Seclect.SelectedTab = tabSevice;
-            gunaDataGridView1.Columns.Clear();
-            ConnectionString cnn = new ConnectionString();
-            string con = cnn.getConnectionString(0);
-            DataSet data = new DataSet();
+            ShowdataService.Columns.Clear();
 
-            using (SqlConnection connect = new SqlConnection(con))
-            {
-                string query = " exec USP_LoadFullService";
-                connect.Open();
-                SqlDataAdapter apter = new SqlDataAdapter(query, connect);
-                apter.Fill(data);
-                connect.Close();
-            }
-            gunaDataGridView1.DataSource = data.Tables[0];
+           
+            string query = " exec USP_LoadFullService";
+                
+            initData(query, ShowdataService);
+            
         }
 
         private void btn_Empoyment_Click(object sender, EventArgs e)
         {
             tc_Menu_second.SelectedTab = tab5;
             tc_Content_Seclect.SelectedTab = tabEmp;
+            string query = "exec  ";
+            initData(query, showDataCustomer);
         }
 
         private void btn_Customer_Click(object sender, EventArgs e)
