@@ -15,6 +15,7 @@ namespace QuanLyKhachSan.GUI
     public partial class frmLogin : Form
     {
         internal static int checkConnectionString;
+        internal static int checkLogin;
         public frmLogin()
         {
             InitializeComponent();
@@ -28,10 +29,10 @@ namespace QuanLyKhachSan.GUI
         }
         private void btn_Login_Click_1(object sender, EventArgs e)
         {
+            checkLogin = 1;
             frmHome fh = new frmHome();
-            this.Hide();
             fh.ShowDialog();
-            this.Show();
+        
         }
     }
 }
