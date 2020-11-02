@@ -124,8 +124,8 @@ namespace QuanLyKhachSan.GUI
 
         private void btn_ManagerialCustomer_Click(object sender, EventArgs e)
         {
-           // frmManagerialCustomer a = new frmManagerialCustomer();
-            //a.Show();
+            frmManagerialCustomer a = new frmManagerialCustomer();
+            a.Show();
         }
 
         private void btn_ManagerialEmp_Click(object sender, EventArgs e)
