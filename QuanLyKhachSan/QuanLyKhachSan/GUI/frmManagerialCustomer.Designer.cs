@@ -59,9 +59,9 @@
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.showDataRoom = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaTextBox8 = new Guna.UI.WinForms.GunaTextBox();
-            this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.sua_btx = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.xoa_btx = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_luu = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -179,7 +179,7 @@
             this.ngaysinh_kh.BorderColor = System.Drawing.Color.Silver;
             this.ngaysinh_kh.CustomFormat = null;
             this.ngaysinh_kh.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.ngaysinh_kh.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.ngaysinh_kh.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.ngaysinh_kh.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ngaysinh_kh.ForeColor = System.Drawing.Color.Black;
             this.ngaysinh_kh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -188,8 +188,8 @@
             this.ngaysinh_kh.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.ngaysinh_kh.Name = "ngaysinh_kh";
             this.ngaysinh_kh.OnHoverBaseColor = System.Drawing.Color.White;
-            this.ngaysinh_kh.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.ngaysinh_kh.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.ngaysinh_kh.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.ngaysinh_kh.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
             this.ngaysinh_kh.OnPressedColor = System.Drawing.Color.Black;
             this.ngaysinh_kh.Size = new System.Drawing.Size(274, 46);
             this.ngaysinh_kh.TabIndex = 38;
@@ -493,41 +493,42 @@
             this.gunaTextBox8.Size = new System.Drawing.Size(272, 47);
             this.gunaTextBox8.TabIndex = 49;
             // 
-            // bunifuFlatButton4
+            // sua_btx
             // 
-            this.bunifuFlatButton4.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
-            this.bunifuFlatButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuFlatButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
-            this.bunifuFlatButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton4.BorderRadius = 0;
-            this.bunifuFlatButton4.ButtonText = "Sửa";
-            this.bunifuFlatButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton4.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton4.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton4.Iconimage = null;
-            this.bunifuFlatButton4.Iconimage_right = null;
-            this.bunifuFlatButton4.Iconimage_right_Selected = null;
-            this.bunifuFlatButton4.Iconimage_Selected = null;
-            this.bunifuFlatButton4.IconMarginLeft = 0;
-            this.bunifuFlatButton4.IconMarginRight = 0;
-            this.bunifuFlatButton4.IconRightVisible = false;
-            this.bunifuFlatButton4.IconRightZoom = 0D;
-            this.bunifuFlatButton4.IconVisible = false;
-            this.bunifuFlatButton4.IconZoom = 40D;
-            this.bunifuFlatButton4.IsTab = true;
-            this.bunifuFlatButton4.Location = new System.Drawing.Point(328, 590);
-            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
-            this.bunifuFlatButton4.Name = "bunifuFlatButton4";
-            this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
-            this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
-            this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton4.selected = false;
-            this.bunifuFlatButton4.Size = new System.Drawing.Size(138, 47);
-            this.bunifuFlatButton4.TabIndex = 53;
-            this.bunifuFlatButton4.Text = "Sửa";
-            this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton4.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton4.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sua_btx.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
+            this.sua_btx.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.sua_btx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
+            this.sua_btx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.sua_btx.BorderRadius = 0;
+            this.sua_btx.ButtonText = "Sửa";
+            this.sua_btx.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sua_btx.DisabledColor = System.Drawing.Color.Gray;
+            this.sua_btx.Iconcolor = System.Drawing.Color.Transparent;
+            this.sua_btx.Iconimage = null;
+            this.sua_btx.Iconimage_right = null;
+            this.sua_btx.Iconimage_right_Selected = null;
+            this.sua_btx.Iconimage_Selected = null;
+            this.sua_btx.IconMarginLeft = 0;
+            this.sua_btx.IconMarginRight = 0;
+            this.sua_btx.IconRightVisible = false;
+            this.sua_btx.IconRightZoom = 0D;
+            this.sua_btx.IconVisible = false;
+            this.sua_btx.IconZoom = 40D;
+            this.sua_btx.IsTab = true;
+            this.sua_btx.Location = new System.Drawing.Point(328, 590);
+            this.sua_btx.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
+            this.sua_btx.Name = "sua_btx";
+            this.sua_btx.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
+            this.sua_btx.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
+            this.sua_btx.OnHoverTextColor = System.Drawing.Color.White;
+            this.sua_btx.selected = false;
+            this.sua_btx.Size = new System.Drawing.Size(138, 47);
+            this.sua_btx.TabIndex = 53;
+            this.sua_btx.Text = "Sửa";
+            this.sua_btx.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.sua_btx.Textcolor = System.Drawing.Color.White;
+            this.sua_btx.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sua_btx.Click += new System.EventHandler(this.sua_btx_Click);
             // 
             // bunifuFlatButton3
             // 
@@ -564,42 +565,44 @@
             this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton3.Click += new System.EventHandler(this.bunifuFlatButton3_Click);
             // 
-            // bunifuFlatButton1
+            // xoa_btx
             // 
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
-            this.bunifuFlatButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
-            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "Xóa";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = null;
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = false;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = false;
-            this.bunifuFlatButton1.IconZoom = 40D;
-            this.bunifuFlatButton1.IsTab = true;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(582, 590);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(140, 47);
-            this.bunifuFlatButton1.TabIndex = 51;
-            this.bunifuFlatButton1.Text = "Xóa";
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xoa_btx.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
+            this.xoa_btx.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.xoa_btx.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
+            this.xoa_btx.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.xoa_btx.BorderRadius = 0;
+            this.xoa_btx.ButtonText = "Xóa";
+            this.xoa_btx.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.xoa_btx.DisabledColor = System.Drawing.Color.Gray;
+            this.xoa_btx.Iconcolor = System.Drawing.Color.Transparent;
+            this.xoa_btx.Iconimage = null;
+            this.xoa_btx.Iconimage_right = null;
+            this.xoa_btx.Iconimage_right_Selected = null;
+            this.xoa_btx.Iconimage_Selected = null;
+            this.xoa_btx.IconMarginLeft = 0;
+            this.xoa_btx.IconMarginRight = 0;
+            this.xoa_btx.IconRightVisible = false;
+            this.xoa_btx.IconRightZoom = 0D;
+            this.xoa_btx.IconVisible = false;
+            this.xoa_btx.IconZoom = 40D;
+            this.xoa_btx.IsTab = true;
+            this.xoa_btx.Location = new System.Drawing.Point(582, 590);
+            this.xoa_btx.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
+            this.xoa_btx.Name = "xoa_btx";
+            this.xoa_btx.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
+            this.xoa_btx.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
+            this.xoa_btx.OnHoverTextColor = System.Drawing.Color.White;
+            this.xoa_btx.selected = false;
+            this.xoa_btx.Size = new System.Drawing.Size(140, 47);
+            this.xoa_btx.TabIndex = 51;
+            this.xoa_btx.Text = "Xóa";
+            this.xoa_btx.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.xoa_btx.Textcolor = System.Drawing.Color.White;
+            this.xoa_btx.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xoa_btx.Click += new System.EventHandler(this.xoa_btx_Click);
             // 
             // bunifuFlatButton2
             // 
@@ -709,6 +712,7 @@
             this.btn_luu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_luu.Textcolor = System.Drawing.Color.White;
             this.btn_luu.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
             // 
             // frmManagerialCustomer
             // 
@@ -718,9 +722,9 @@
             this.ClientSize = new System.Drawing.Size(1508, 652);
             this.Controls.Add(this.btn_luu);
             this.Controls.Add(this.bunifuFlatButton5);
-            this.Controls.Add(this.bunifuFlatButton4);
+            this.Controls.Add(this.sua_btx);
             this.Controls.Add(this.bunifuFlatButton3);
-            this.Controls.Add(this.bunifuFlatButton1);
+            this.Controls.Add(this.xoa_btx);
             this.Controls.Add(this.bunifuFlatButton2);
             this.Controls.Add(this.gunaTextBox8);
             this.Controls.Add(this.showDataRoom);
@@ -728,7 +732,7 @@
             this.Controls.Add(this.panel_control);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            
+ 
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmManagerialCustomer";
             this.panel_control.ResumeLayout(false);
@@ -768,9 +772,9 @@
         private Guna.UI.WinForms.GunaTextBox gunaTextBox8;
         private Guna.UI.WinForms.GunaDataGridView showDataRoom;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton5;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton4;
+        private Bunifu.Framework.UI.BunifuFlatButton sua_btx;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton xoa_btx;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
         private Guna.UI.WinForms.GunaDateTimePicker ngaysinh_kh;
         private Bunifu.Framework.UI.BunifuFlatButton btn_luu;
