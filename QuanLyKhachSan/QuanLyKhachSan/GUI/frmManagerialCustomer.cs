@@ -182,10 +182,21 @@ namespace QuanLyKhachSan.GUI
             }
             if (frmManagerialCustomer.xoa == 1)
             {
-                MessageBox.Show("Xóa khách hàng");
-                bunifuFlatButton2.Enabled = true;
-                sua_btx.Enabled = true;
-                xoa_btx.Enabled = true;
+
+                DialogResult res = MessageBox.Show("Bạn có thực sự muốn xóa bạn đọc có mã là" + frmManagerialCustomer.IDcart.TrimEnd() , "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                if (res == DialogResult.Yes)
+                {
+                    delete(frmManagerialCustomer.IDcart);
+                    showdata();
+                    bunifuFlatButton2.Enabled = true;
+                    sua_btx.Enabled = true;
+                    xoa_btx.Enabled = true;
+                }
+                if (res == DialogResult.No)
+                {
+
+                }
+                
             }
         }
 
@@ -328,6 +339,23 @@ namespace QuanLyKhachSan.GUI
             {
                 MessageBox.Show("Sửa không thành công, vui lòng kiểm tra lại!");
                 return 0;
+            }
+        }
+        public void delete(string key)
+        {
+            string query1 = "DELETE	FROM dbo.CUSTOMER WHERE IDCard=  @ID";
+            ConnectionString b = new ConnectionString();
+            string con = b.getConnectionString(frmLogin.checkConnectionString);
+            using (SqlConnection connection = new SqlConnection(con))
+            {
+                connection.Open();
+
+                SqlCommand cmd = connection.CreateCommand();
+                cmd.CommandText = query1;
+                cmd.Parameters.Add("@ID", SqlDbType.NVarChar).Value = key;
+                 cmd.ExecuteNonQuery();
+                connection.Close();
+
             }
         }
     }
