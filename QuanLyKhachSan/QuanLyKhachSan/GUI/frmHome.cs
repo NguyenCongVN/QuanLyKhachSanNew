@@ -199,7 +199,7 @@ namespace QuanLyKhachSan.GUI
             {
                 conn.Open();
                 query = "DS_Phong";
-                SqlCommand cmd = new SqlCommand(query,conn);
+                SqlCommand cmd = new SqlCommand(query,conn) ;
                 cmd.CommandType = CommandType.StoredProcedure;
                 adap = new SqlDataAdapter(cmd);
                 adap.Fill(data_phong);
