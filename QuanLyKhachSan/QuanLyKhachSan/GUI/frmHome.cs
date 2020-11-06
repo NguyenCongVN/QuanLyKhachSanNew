@@ -36,7 +36,7 @@ namespace QuanLyKhachSan.GUI
             this.hideMenu();
             tc_Menu_second.SelectedTab = noneContent;
             tc_Content_Seclect.SelectedTab = tabNoneContent;
-            if(frmLogin.checkLogin == 1)
+            if (frmLogin.checkLogin == 1)
             {
                 MessageBox.Show("Đăng nhập thành công");
             }
@@ -106,11 +106,11 @@ namespace QuanLyKhachSan.GUI
             tc_Content_Seclect.SelectedTab = tabSevice;
             ShowdataService.Columns.Clear();
 
-           
+
             string query = " exec USP_LoadFullService";
-                
+
             initData(query, ShowdataService);
-            
+
         }
 
         private void btn_Empoyment_Click(object sender, EventArgs e)
@@ -199,13 +199,12 @@ namespace QuanLyKhachSan.GUI
             {
                 conn.Open();
                 query = "DS_Phong";
-                SqlCommand cmd = new SqlCommand(query,conn) ;
+                SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 adap = new SqlDataAdapter(cmd);
                 adap.Fill(data_phong);
                 showDataRoom.DataSource = data_phong;
                 conn.Close();
-
 
 
             }
