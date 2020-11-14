@@ -32,6 +32,15 @@ namespace QuanLyKhachSan.GUI
             this.hideMenu();
             tc_Menu_second.SelectedTab = noneContent;
             tc_Content_Seclect.SelectedTab = tabNoneContent;
+            if(frmLogin.checkLogin == 1)
+            {
+                MessageBox.Show("Đăng nhập thành công");
+            }
+            else
+            {
+                MessageBox.Show("Lỗi");
+                this.Close();
+            }
         }
         private void initData(string query, GunaDataGridView showData)
         {
@@ -82,18 +91,30 @@ namespace QuanLyKhachSan.GUI
         {
             tc_Menu_second.SelectedTab = tab3;
             tc_Content_Seclect.SelectedTab = tabBill;
+            string query = " exec USP_LoadFULLBILL";
+
+            initData(query, showdataBill);
         }
 
         private void btn_Sevice_Click(object sender, EventArgs e)
         {
             tc_Menu_second.SelectedTab = tab4;
             tc_Content_Seclect.SelectedTab = tabSevice;
+            ShowdataService.Columns.Clear();
+
+           
+            string query = " exec USP_LoadFullService";
+                
+            initData(query, ShowdataService);
+            
         }
 
         private void btn_Empoyment_Click(object sender, EventArgs e)
         {
             tc_Menu_second.SelectedTab = tab5;
             tc_Content_Seclect.SelectedTab = tabEmp;
+            string query = "exec  ";
+            initData(query, showDataCustomer);
         }
 
         private void btn_Customer_Click(object sender, EventArgs e)
@@ -124,32 +145,43 @@ namespace QuanLyKhachSan.GUI
 
         private void btn_ManagerialCustomer_Click(object sender, EventArgs e)
         {
-            frmManagerialCustomer a = new frmManagerialCustomer();
-            a.Show();
+            frmManagerialCustomer fmc = new frmManagerialCustomer();
+            fmc.Show();
         }
 
         private void btn_ManagerialEmp_Click(object sender, EventArgs e)
         {
-            frmManagerialEmp a = new frmManagerialEmp();
-            a.Show();
+            frmManagerialEmp fme = new frmManagerialEmp();
+            fme.Show();
         }
 
         private void btn_ManagerialService_Click(object sender, EventArgs e)
         {
-          //  frmManagerialService a = new frmManagerialService();
-          //  a.Show();
+            frmManagerialService fms = new frmManagerialService();
+            fms.Show();
         }
 
         private void btn_bookRoom_Click(object sender, EventArgs e)
         {
-             frmBookRoom a = new frmBookRoom();
-             a.Show();
+            frmBookRoom fbr = new frmBookRoom();
+            fbr.Show();
         }
 
         private void btn_checkInRoom_Click(object sender, EventArgs e)
         {
-              frmCheckInRoom a = new frmCheckInRoom();
-              a.Show();
+            frmCheckInRoom fci = new frmCheckInRoom();
+            fci.Show();
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void btn_Account_Click(object sender, EventArgs e)
+        {
+            frmAccount fa = new frmAccount();
+            fa.Show();
         }
     }
 }
