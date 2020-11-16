@@ -20,7 +20,18 @@ namespace QuanLyKhachSan.GUI
         public frmHome()
         {
             InitializeComponent();
-           
+            tc_Menu_second.SizeMode = TabSizeMode.Fixed;
+            tc_Menu_second.Appearance = TabAppearance.FlatButtons;
+            tc_Menu_second.ItemSize = new Size(0, 1);
+            tc_Content_Seclect.SizeMode = TabSizeMode.Fixed;
+            tc_Content_Seclect.Appearance = TabAppearance.FlatButtons;
+            tc_Content_Seclect.ItemSize = new Size(0, 1);
+            tc_MainMenu.SizeMode = TabSizeMode.Fixed;
+            tc_MainMenu.Appearance = TabAppearance.FlatButtons;
+            tc_MainMenu.ItemSize = new Size(0, 1);
+            this.hideMenu();
+            tc_Menu_second.SelectedTab = noneContent;
+            tc_Content_Seclect.SelectedTab = tabNoneContent;
         }
         private void initData(string query, GunaDataGridView showData)
         {
