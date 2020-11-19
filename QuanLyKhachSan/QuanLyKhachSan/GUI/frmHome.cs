@@ -146,7 +146,11 @@ namespace QuanLyKhachSan.GUI
         private void btn_ManagerialCustomer_Click(object sender, EventArgs e)
         {
             frmManagerialCustomer fmc = new frmManagerialCustomer();
-            fmc.Show();
+            this.Hide();
+            fmc.ShowDialog();
+            this.Show();
+            string query = "SELECT * FROM dbo.CUSTOMER ";
+            initData(query, showDataCustomer);
         }
 
         private void btn_ManagerialEmp_Click(object sender, EventArgs e)
