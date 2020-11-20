@@ -31,7 +31,6 @@ namespace QuanLyKhachSan.GUI
         {
             checkLogin = 1;
             frmHome fh = new frmHome();
-            this.Hide();
             fh.ShowDialog();
         
         }
