@@ -16,5 +16,34 @@ namespace QuanLyKhachSan.GUI
         {
             InitializeComponent();
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        #region Hand click button
+
+   
+        private void btn_confim_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_CheckIn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_removeRoom_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
+
     }
 }
