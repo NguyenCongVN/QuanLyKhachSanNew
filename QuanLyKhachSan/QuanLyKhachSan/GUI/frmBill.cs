@@ -16,5 +16,15 @@ namespace QuanLyKhachSan.GUI
         {
             InitializeComponent();
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
