@@ -15,10 +15,6 @@ namespace QuanLyKhachSan.GUI
 {
     public partial class frmHome : Form
     {
-        SqlConnection conn;
-        ConnectionString cnn = new ConnectionString();
-        SqlDataAdapter adap;
-        string query = "";
         int WIDTH_MENU_MAX = 182;
         int WIDTH_MENU_MIN = 50;
         public frmHome()
@@ -50,7 +46,7 @@ namespace QuanLyKhachSan.GUI
         {
             DataSet data = new DataSet();
             ConnectionString b = new ConnectionString();
-            string con = b.getConnectionString(1);
+            string con = b.getConnectionString(frmLogin.checkConnectionString);
             using (SqlConnection connect = new SqlConnection(con))
             {
 
@@ -150,11 +146,7 @@ namespace QuanLyKhachSan.GUI
         private void btn_ManagerialCustomer_Click(object sender, EventArgs e)
         {
             frmManagerialCustomer fmc = new frmManagerialCustomer();
-            this.Hide();
-            fmc.ShowDialog();
-            this.Show();
-            string query = "SELECT * FROM dbo.CUSTOMER ";
-            initData(query, showDataCustomer);
+            fmc.Show();
         }
 
         private void btn_ManagerialEmp_Click(object sender, EventArgs e)
@@ -190,25 +182,6 @@ namespace QuanLyKhachSan.GUI
         {
             frmAccount fa = new frmAccount();
             fa.Show();
-        }
-
-        private void bunifuFlatButton4_Click(object sender, EventArgs e)
-        {
-            DataTable data_phong = new DataTable();
-            using (conn = new SqlConnection(cnn.getConnectionString(1)))
-            {
-                conn.Open();
-                query = "DS_Phong";
-                SqlCommand cmd = new SqlCommand(query,conn) ;
-                cmd.CommandType = CommandType.StoredProcedure;
-                adap = new SqlDataAdapter(cmd);
-                adap.Fill(data_phong);
-                showDataRoom.DataSource = data_phong;
-                conn.Close();
-
-
-
-            }
         }
     }
 }

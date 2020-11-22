@@ -127,18 +127,26 @@ namespace QuanLyKhachSan.GUI
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
             groupBox2.Enabled = true;
-            
-            makhachhang.Text = "";
+           /* makhachhang.Text = "";
             Name.Text = "";
             Sdt.Text = "";
             diachi.Text = "";
             CMND.Text = "";
-            quoctich.Text = "";
+            quoctich.Text = "";*/
             them = 1;
             sua = 0;
             xoa = 0;
 
-            
+            int check=insert();
+            if(check==1)
+            {
+                MessageBox.Show("Thêm thành công!");
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("thêm thất bại");
+            }
         }
         public int insert()
         {
@@ -193,23 +201,6 @@ namespace QuanLyKhachSan.GUI
             {
                 MessageBox.Show("Thêm không thành công, vui lòng kiểm tra lại!");
                 return 0;
-            }
-        }
-
-        private void btn_luu_Click(object sender, EventArgs e)
-        {
-            if(them==1)
-            {
-                int check = insert();
-                if (check == 1)
-                {
-                    MessageBox.Show("Thêm thành công!");
-                    showdata();
-                }
-                else
-                {
-                    MessageBox.Show("thêm thất bại");
-                }
             }
         }
     }
