@@ -148,8 +148,8 @@ namespace QuanLyKhachSan.GUI
 
         private void btn_checkInRoom_Click(object sender, EventArgs e)
         {
-          //  frmCheckInRoom a = new frmCheckInRoom();
-          //  a.Show();
+              frmCheckInRoom a = new frmCheckInRoom();
+              a.Show();
         }
     }
 }
