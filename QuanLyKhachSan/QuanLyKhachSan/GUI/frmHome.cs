@@ -36,21 +36,13 @@ namespace QuanLyKhachSan.GUI
             this.hideMenu();
             tc_Menu_second.SelectedTab = noneContent;
             tc_Content_Seclect.SelectedTab = tabNoneContent;
-            if (frmLogin.checkLogin == 1)
-            {
-                MessageBox.Show("Đăng nhập thành công");
-            }
-            else
-            {
-                MessageBox.Show("Lỗi");
-                this.Close();
-            }
+            
         }
         private void initData(string query, GunaDataGridView showData)
         {
             DataSet data = new DataSet();
             ConnectionString b = new ConnectionString();
-            string con = b.getConnectionString(1);
+            string con = b.getConnectionString(frmLogin.checkConnectionString);
             using (SqlConnection connect = new SqlConnection(con))
             {
 
@@ -117,8 +109,8 @@ namespace QuanLyKhachSan.GUI
         {
             tc_Menu_second.SelectedTab = tab5;
             tc_Content_Seclect.SelectedTab = tabEmp;
-            string query = "exec  ";
-            initData(query, showDataCustomer);
+            string query = "SELECT * FROM dbo.STAFF";
+            initData(query, showDataEmp);
         }
 
         private void btn_Customer_Click(object sender, EventArgs e)
