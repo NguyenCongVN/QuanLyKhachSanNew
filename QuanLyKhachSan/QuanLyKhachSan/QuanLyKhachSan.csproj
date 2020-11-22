@@ -91,6 +91,12 @@
     <Compile Include="GUI\frmManagerialEmp.Designer.cs">
       <DependentUpon>frmManagerialEmp.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmManagerialService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmManagerialService.Designer.cs">
+      <DependentUpon>frmManagerialService.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\frmHome.resx">
