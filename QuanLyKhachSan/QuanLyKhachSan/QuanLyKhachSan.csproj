@@ -36,11 +36,11 @@
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Sparkline.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Guna.UI">
       <HintPath>..\Guna.UI.dll</HintPath>
     </Reference>
@@ -71,6 +71,12 @@
     </Compile>
     <Compile Include="GUI\frmAccount.Designer.cs">
       <DependentUpon>frmAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmBill.Designer.cs">
+      <DependentUpon>frmBill.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmBookRoom.cs">
       <SubType>Form</SubType>
@@ -114,10 +120,19 @@
     <Compile Include="GUI\frmManagerialService.Designer.cs">
       <DependentUpon>frmManagerialService.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmPrintBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmPrintBill.Designer.cs">
+      <DependentUpon>frmPrintBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\frmAccount.resx">
       <DependentUpon>frmAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmBill.resx">
+      <DependentUpon>frmBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmBookRoom.resx">
       <DependentUpon>frmBookRoom.cs</DependentUpon>
@@ -136,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmManagerialService.resx">
       <DependentUpon>frmManagerialService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmPrintBill.resx">
+      <DependentUpon>frmPrintBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
