@@ -56,7 +56,6 @@ namespace QuanLyKhachSan.GUI
 
         private void gunaControlBox1_Click(object sender, EventArgs e)
         {
-            //duy change
             Application.Exit();
         }
     }
