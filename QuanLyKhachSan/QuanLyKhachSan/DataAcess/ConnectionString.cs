@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyKhackSan.DataAcess
 {
-    public class ConnectionString
+    class ConnectionString
     {
         public string getConnectionString(int value)
         {
@@ -17,14 +17,14 @@ namespace QuanLyKhackSan.DataAcess
             }
             else
             {
-                return @"Data Source=" + Environment.MachineName + ";Initial Catalog=HotelManagement;Integrated Security=True";
+                return @"Data Source=" + Environment.MachineName + "\\SQLEXPRESS;Initial Catalog=HotelManagement;Integrated Security=True";
             }
         }
         public int checkCnn()
         {
             try
             {
-                string temp = @"Data Source=" + Environment.MachineName + ";Initial Catalog=HotelManagement;Integrated Security=True";
+                string temp = @"Data Source=" + Environment.MachineName + "\\SQLEXPRESS;Initial Catalog=HotelManagement;Integrated Security=True";
                 using (SqlConnection connect = new SqlConnection(temp))
                 {
 
