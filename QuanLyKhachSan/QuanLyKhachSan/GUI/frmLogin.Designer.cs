@@ -42,7 +42,6 @@
             this.gunaDragControl2 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.chk_savedAcc = new Guna.UI.WinForms.GunaMediumCheckBox();
-            this.btn_dangky = new Guna.UI.WinForms.GunaAdvenceButton();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,7 +77,7 @@
             this.btn_Login.OnHoverImage = null;
             this.btn_Login.OnHoverLineColor = System.Drawing.Color.Black;
             this.btn_Login.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_Login.Size = new System.Drawing.Size(152, 47);
+            this.btn_Login.Size = new System.Drawing.Size(323, 47);
             this.btn_Login.TabIndex = 16;
             this.btn_Login.Text = "Đăng nhập";
             this.btn_Login.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -200,45 +199,12 @@
             this.chk_savedAcc.Size = new System.Drawing.Size(20, 20);
             this.chk_savedAcc.TabIndex = 15;
             // 
-            // btn_dangky
-            // 
-            this.btn_dangky.AnimationHoverSpeed = 0.07F;
-            this.btn_dangky.AnimationSpeed = 0.03F;
-            this.btn_dangky.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
-            this.btn_dangky.BorderColor = System.Drawing.Color.Black;
-            this.btn_dangky.BorderSize = 2;
-            this.btn_dangky.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btn_dangky.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btn_dangky.CheckedForeColor = System.Drawing.Color.White;
-            this.btn_dangky.CheckedImage = null;
-            this.btn_dangky.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btn_dangky.FocusedColor = System.Drawing.Color.Empty;
-            this.btn_dangky.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_dangky.ForeColor = System.Drawing.Color.White;
-            this.btn_dangky.Image = null;
-            this.btn_dangky.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_dangky.LineColor = System.Drawing.Color.Black;
-            this.btn_dangky.Location = new System.Drawing.Point(529, 562);
-            this.btn_dangky.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_dangky.Name = "btn_dangky";
-            this.btn_dangky.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(184)))), ((int)(((byte)(234)))));
-            this.btn_dangky.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btn_dangky.OnHoverForeColor = System.Drawing.Color.White;
-            this.btn_dangky.OnHoverImage = null;
-            this.btn_dangky.OnHoverLineColor = System.Drawing.Color.Black;
-            this.btn_dangky.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_dangky.Size = new System.Drawing.Size(153, 47);
-            this.btn_dangky.TabIndex = 19;
-            this.btn_dangky.Text = "Đăng ký";
-            this.btn_dangky.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(237)))), ((int)(((byte)(234)))));
             this.ClientSize = new System.Drawing.Size(1029, 652);
-            this.Controls.Add(this.btn_dangky);
             this.Controls.Add(this.gunaControlBox1);
             this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.btn_Login);
@@ -274,6 +240,5 @@
         private Guna.UI.WinForms.GunaDragControl gunaDragControl2;
         private Guna.UI.WinForms.GunaMediumCheckBox chk_savedAcc;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaAdvenceButton btn_dangky;
     }
 }
