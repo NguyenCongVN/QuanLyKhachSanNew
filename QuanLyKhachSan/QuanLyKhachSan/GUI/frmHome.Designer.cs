@@ -29,18 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel_control = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.btn_controlMenu = new Bunifu.Framework.UI.BunifuImageButton();
-            this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.btn_Syn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tc_Menu_second = new System.Windows.Forms.TabControl();
@@ -94,6 +93,7 @@
             this.btn_service = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_bill = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pn_Menu_Parent = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btn_exit = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel_control.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_controlMenu)).BeginInit();
             this.tc_Menu_second.SuspendLayout();
@@ -117,6 +117,7 @@
             this.tc_MainMenu.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.pn_Menu_Parent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -128,19 +129,18 @@
             // 
             this.panel_control.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_control.BackgroundImage")));
             this.panel_control.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel_control.Controls.Add(this.btn_exit);
             this.panel_control.Controls.Add(this.gunaLabel1);
             this.panel_control.Controls.Add(this.btn_controlMenu);
-            this.panel_control.Controls.Add(this.gunaControlBox1);
             this.panel_control.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_control.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.panel_control.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.panel_control.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.panel_control.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.panel_control.Location = new System.Drawing.Point(0, 0);
-            this.panel_control.Margin = new System.Windows.Forms.Padding(4);
             this.panel_control.Name = "panel_control";
             this.panel_control.Quality = 10;
-            this.panel_control.Size = new System.Drawing.Size(1600, 44);
+            this.panel_control.Size = new System.Drawing.Size(1167, 36);
             this.panel_control.TabIndex = 0;
             // 
             // gunaLabel1
@@ -149,9 +149,10 @@
             this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel1.Location = new System.Drawing.Point(711, 6);
+            this.gunaLabel1.Location = new System.Drawing.Point(512, 7);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(177, 28);
+            this.gunaLabel1.Size = new System.Drawing.Size(143, 21);
             this.gunaLabel1.TabIndex = 20;
             this.gunaLabel1.Text = "Quản Lý Khách Sạn";
             // 
@@ -160,32 +161,14 @@
             this.btn_controlMenu.BackColor = System.Drawing.Color.Transparent;
             this.btn_controlMenu.Image = ((System.Drawing.Image)(resources.GetObject("btn_controlMenu.Image")));
             this.btn_controlMenu.ImageActive = null;
-            this.btn_controlMenu.Location = new System.Drawing.Point(7, 4);
-            this.btn_controlMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_controlMenu.Location = new System.Drawing.Point(5, 4);
             this.btn_controlMenu.Name = "btn_controlMenu";
-            this.btn_controlMenu.Size = new System.Drawing.Size(47, 33);
+            this.btn_controlMenu.Size = new System.Drawing.Size(35, 27);
             this.btn_controlMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_controlMenu.TabIndex = 1;
             this.btn_controlMenu.TabStop = false;
             this.btn_controlMenu.Zoom = 10;
             this.btn_controlMenu.Click += new System.EventHandler(this.btn_controlMenu_Click);
-            // 
-            // gunaControlBox1
-            // 
-            this.gunaControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaControlBox1.AnimationHoverSpeed = 0.07F;
-            this.gunaControlBox1.AnimationSpeed = 0.03F;
-            this.gunaControlBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
-            this.gunaControlBox1.IconColor = System.Drawing.Color.Black;
-            this.gunaControlBox1.IconSize = 15F;
-            this.gunaControlBox1.Location = new System.Drawing.Point(1560, 4);
-            this.gunaControlBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gunaControlBox1.Name = "gunaControlBox1";
-            this.gunaControlBox1.OnHoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.gunaControlBox1.OnHoverIconColor = System.Drawing.Color.White;
-            this.gunaControlBox1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaControlBox1.Size = new System.Drawing.Size(29, 30);
-            this.gunaControlBox1.TabIndex = 19;
             // 
             // gunaDragControl1
             // 
@@ -214,13 +197,13 @@
             this.btn_Syn.IconZoom = 60D;
             this.btn_Syn.IsTab = true;
             this.btn_Syn.Location = new System.Drawing.Point(0, 0);
-            this.btn_Syn.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_Syn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_Syn.Name = "btn_Syn";
             this.btn_Syn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_Syn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.btn_Syn.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_Syn.selected = false;
-            this.btn_Syn.Size = new System.Drawing.Size(235, 47);
+            this.btn_Syn.Size = new System.Drawing.Size(174, 38);
             this.btn_Syn.TabIndex = 3;
             this.btn_Syn.Text = "Trang chủ";
             this.btn_Syn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -240,11 +223,10 @@
             this.tc_Menu_second.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tc_Menu_second.ItemSize = new System.Drawing.Size(18, 18);
             this.tc_Menu_second.Location = new System.Drawing.Point(0, 0);
-            this.tc_Menu_second.Margin = new System.Windows.Forms.Padding(4);
             this.tc_Menu_second.Name = "tc_Menu_second";
             this.tc_Menu_second.Padding = new System.Drawing.Point(0, 0);
             this.tc_Menu_second.SelectedIndex = 0;
-            this.tc_Menu_second.Size = new System.Drawing.Size(243, 818);
+            this.tc_Menu_second.Size = new System.Drawing.Size(182, 664);
             this.tc_Menu_second.TabIndex = 2;
             // 
             // tab1
@@ -254,9 +236,8 @@
             this.tab1.Controls.Add(this.btn_bookRoom);
             this.tab1.Controls.Add(this.bunifuFlatButton4);
             this.tab1.Location = new System.Drawing.Point(4, 22);
-            this.tab1.Margin = new System.Windows.Forms.Padding(4);
             this.tab1.Name = "tab1";
-            this.tab1.Size = new System.Drawing.Size(235, 792);
+            this.tab1.Size = new System.Drawing.Size(174, 638);
             this.tab1.TabIndex = 0;
             this.tab1.Text = "1";
             // 
@@ -282,14 +263,14 @@
             this.btn_checkInRoom.IconVisible = false;
             this.btn_checkInRoom.IconZoom = 40D;
             this.btn_checkInRoom.IsTab = true;
-            this.btn_checkInRoom.Location = new System.Drawing.Point(0, 94);
-            this.btn_checkInRoom.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_checkInRoom.Location = new System.Drawing.Point(0, 76);
+            this.btn_checkInRoom.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_checkInRoom.Name = "btn_checkInRoom";
             this.btn_checkInRoom.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_checkInRoom.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.btn_checkInRoom.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_checkInRoom.selected = false;
-            this.btn_checkInRoom.Size = new System.Drawing.Size(235, 47);
+            this.btn_checkInRoom.Size = new System.Drawing.Size(174, 38);
             this.btn_checkInRoom.TabIndex = 6;
             this.btn_checkInRoom.Text = "Nhận phòng";
             this.btn_checkInRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -319,14 +300,14 @@
             this.btn_bookRoom.IconVisible = false;
             this.btn_bookRoom.IconZoom = 40D;
             this.btn_bookRoom.IsTab = true;
-            this.btn_bookRoom.Location = new System.Drawing.Point(0, 47);
-            this.btn_bookRoom.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_bookRoom.Location = new System.Drawing.Point(0, 38);
+            this.btn_bookRoom.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_bookRoom.Name = "btn_bookRoom";
             this.btn_bookRoom.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_bookRoom.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.btn_bookRoom.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_bookRoom.selected = false;
-            this.btn_bookRoom.Size = new System.Drawing.Size(235, 47);
+            this.btn_bookRoom.Size = new System.Drawing.Size(174, 38);
             this.btn_bookRoom.TabIndex = 5;
             this.btn_bookRoom.Text = "Đặt phòng";
             this.btn_bookRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -357,13 +338,13 @@
             this.bunifuFlatButton4.IconZoom = 40D;
             this.bunifuFlatButton4.IsTab = true;
             this.bunifuFlatButton4.Location = new System.Drawing.Point(0, 0);
-            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton4.Name = "bunifuFlatButton4";
             this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.bunifuFlatButton4.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton4.selected = false;
-            this.bunifuFlatButton4.Size = new System.Drawing.Size(235, 47);
+            this.bunifuFlatButton4.Size = new System.Drawing.Size(174, 38);
             this.bunifuFlatButton4.TabIndex = 4;
             this.bunifuFlatButton4.Text = "Tất cả các phòng";
             this.bunifuFlatButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -376,9 +357,8 @@
             this.tab3.Controls.Add(this.bunifuFlatButton7);
             this.tab3.Controls.Add(this.bunifuFlatButton6);
             this.tab3.Location = new System.Drawing.Point(4, 22);
-            this.tab3.Margin = new System.Windows.Forms.Padding(4);
             this.tab3.Name = "tab3";
-            this.tab3.Size = new System.Drawing.Size(235, 792);
+            this.tab3.Size = new System.Drawing.Size(174, 639);
             this.tab3.TabIndex = 2;
             this.tab3.Text = "3";
             // 
@@ -404,14 +384,14 @@
             this.bunifuFlatButton7.IconVisible = false;
             this.bunifuFlatButton7.IconZoom = 40D;
             this.bunifuFlatButton7.IsTab = true;
-            this.bunifuFlatButton7.Location = new System.Drawing.Point(0, 47);
-            this.bunifuFlatButton7.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.bunifuFlatButton7.Location = new System.Drawing.Point(0, 38);
+            this.bunifuFlatButton7.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton7.Name = "bunifuFlatButton7";
             this.bunifuFlatButton7.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton7.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.bunifuFlatButton7.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton7.selected = false;
-            this.bunifuFlatButton7.Size = new System.Drawing.Size(235, 47);
+            this.bunifuFlatButton7.Size = new System.Drawing.Size(174, 38);
             this.bunifuFlatButton7.TabIndex = 6;
             this.bunifuFlatButton7.Text = "Thanh toán";
             this.bunifuFlatButton7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -441,13 +421,13 @@
             this.bunifuFlatButton6.IconZoom = 40D;
             this.bunifuFlatButton6.IsTab = true;
             this.bunifuFlatButton6.Location = new System.Drawing.Point(0, 0);
-            this.bunifuFlatButton6.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.bunifuFlatButton6.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton6.Name = "bunifuFlatButton6";
             this.bunifuFlatButton6.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton6.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.bunifuFlatButton6.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton6.selected = false;
-            this.bunifuFlatButton6.Size = new System.Drawing.Size(235, 47);
+            this.bunifuFlatButton6.Size = new System.Drawing.Size(174, 38);
             this.bunifuFlatButton6.TabIndex = 5;
             this.bunifuFlatButton6.Text = "Hiển thị";
             this.bunifuFlatButton6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -460,9 +440,8 @@
             this.tab4.Controls.Add(this.btn_ManagerialService);
             this.tab4.Controls.Add(this.bunifuFlatButton11);
             this.tab4.Location = new System.Drawing.Point(4, 22);
-            this.tab4.Margin = new System.Windows.Forms.Padding(4);
             this.tab4.Name = "tab4";
-            this.tab4.Size = new System.Drawing.Size(235, 792);
+            this.tab4.Size = new System.Drawing.Size(174, 639);
             this.tab4.TabIndex = 3;
             this.tab4.Text = "4";
             // 
@@ -488,14 +467,14 @@
             this.btn_ManagerialService.IconVisible = false;
             this.btn_ManagerialService.IconZoom = 40D;
             this.btn_ManagerialService.IsTab = true;
-            this.btn_ManagerialService.Location = new System.Drawing.Point(0, 47);
-            this.btn_ManagerialService.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_ManagerialService.Location = new System.Drawing.Point(0, 38);
+            this.btn_ManagerialService.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_ManagerialService.Name = "btn_ManagerialService";
             this.btn_ManagerialService.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_ManagerialService.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.btn_ManagerialService.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_ManagerialService.selected = false;
-            this.btn_ManagerialService.Size = new System.Drawing.Size(235, 47);
+            this.btn_ManagerialService.Size = new System.Drawing.Size(174, 38);
             this.btn_ManagerialService.TabIndex = 9;
             this.btn_ManagerialService.Text = "Quản lý dịch vụ";
             this.btn_ManagerialService.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -526,13 +505,13 @@
             this.bunifuFlatButton11.IconZoom = 40D;
             this.bunifuFlatButton11.IsTab = true;
             this.bunifuFlatButton11.Location = new System.Drawing.Point(0, 0);
-            this.bunifuFlatButton11.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.bunifuFlatButton11.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton11.Name = "bunifuFlatButton11";
             this.bunifuFlatButton11.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton11.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.bunifuFlatButton11.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton11.selected = false;
-            this.bunifuFlatButton11.Size = new System.Drawing.Size(235, 47);
+            this.bunifuFlatButton11.Size = new System.Drawing.Size(174, 38);
             this.bunifuFlatButton11.TabIndex = 8;
             this.bunifuFlatButton11.Text = "Thông tin dịch vụ";
             this.bunifuFlatButton11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -547,7 +526,7 @@
             this.tab5.Location = new System.Drawing.Point(4, 22);
             this.tab5.Margin = new System.Windows.Forms.Padding(0);
             this.tab5.Name = "tab5";
-            this.tab5.Size = new System.Drawing.Size(235, 792);
+            this.tab5.Size = new System.Drawing.Size(174, 639);
             this.tab5.TabIndex = 4;
             this.tab5.Text = "5";
             // 
@@ -573,14 +552,14 @@
             this.btn_ManagerialEmp.IconVisible = false;
             this.btn_ManagerialEmp.IconZoom = 40D;
             this.btn_ManagerialEmp.IsTab = true;
-            this.btn_ManagerialEmp.Location = new System.Drawing.Point(0, 47);
-            this.btn_ManagerialEmp.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_ManagerialEmp.Location = new System.Drawing.Point(0, 38);
+            this.btn_ManagerialEmp.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_ManagerialEmp.Name = "btn_ManagerialEmp";
             this.btn_ManagerialEmp.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_ManagerialEmp.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.btn_ManagerialEmp.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_ManagerialEmp.selected = false;
-            this.btn_ManagerialEmp.Size = new System.Drawing.Size(235, 47);
+            this.btn_ManagerialEmp.Size = new System.Drawing.Size(174, 38);
             this.btn_ManagerialEmp.TabIndex = 6;
             this.btn_ManagerialEmp.Text = "Quản lý nhân viên";
             this.btn_ManagerialEmp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -611,13 +590,13 @@
             this.bunifuFlatButton12.IconZoom = 40D;
             this.bunifuFlatButton12.IsTab = true;
             this.bunifuFlatButton12.Location = new System.Drawing.Point(0, 0);
-            this.bunifuFlatButton12.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.bunifuFlatButton12.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton12.Name = "bunifuFlatButton12";
             this.bunifuFlatButton12.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton12.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.bunifuFlatButton12.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton12.selected = false;
-            this.bunifuFlatButton12.Size = new System.Drawing.Size(235, 47);
+            this.bunifuFlatButton12.Size = new System.Drawing.Size(174, 38);
             this.bunifuFlatButton12.TabIndex = 5;
             this.bunifuFlatButton12.Text = "Hiển thị ";
             this.bunifuFlatButton12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -632,7 +611,7 @@
             this.tab6.Location = new System.Drawing.Point(4, 22);
             this.tab6.Margin = new System.Windows.Forms.Padding(0);
             this.tab6.Name = "tab6";
-            this.tab6.Size = new System.Drawing.Size(235, 792);
+            this.tab6.Size = new System.Drawing.Size(174, 639);
             this.tab6.TabIndex = 5;
             this.tab6.Text = "6";
             // 
@@ -658,14 +637,14 @@
             this.btn_ManagerialCustomer.IconVisible = false;
             this.btn_ManagerialCustomer.IconZoom = 40D;
             this.btn_ManagerialCustomer.IsTab = true;
-            this.btn_ManagerialCustomer.Location = new System.Drawing.Point(0, 47);
-            this.btn_ManagerialCustomer.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_ManagerialCustomer.Location = new System.Drawing.Point(0, 38);
+            this.btn_ManagerialCustomer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_ManagerialCustomer.Name = "btn_ManagerialCustomer";
             this.btn_ManagerialCustomer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_ManagerialCustomer.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.btn_ManagerialCustomer.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_ManagerialCustomer.selected = false;
-            this.btn_ManagerialCustomer.Size = new System.Drawing.Size(235, 47);
+            this.btn_ManagerialCustomer.Size = new System.Drawing.Size(174, 38);
             this.btn_ManagerialCustomer.TabIndex = 8;
             this.btn_ManagerialCustomer.Text = "Quản lý khách hàng";
             this.btn_ManagerialCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -696,13 +675,13 @@
             this.bunifuFlatButton1.IconZoom = 40D;
             this.bunifuFlatButton1.IsTab = true;
             this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(235, 47);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(174, 38);
             this.bunifuFlatButton1.TabIndex = 6;
             this.bunifuFlatButton1.Text = "Hiển thị";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -715,8 +694,9 @@
             this.tab7.Controls.Add(this.bunifuFlatButton9);
             this.tab7.Controls.Add(this.bunifuFlatButton8);
             this.tab7.Location = new System.Drawing.Point(4, 22);
+            this.tab7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tab7.Name = "tab7";
-            this.tab7.Size = new System.Drawing.Size(235, 792);
+            this.tab7.Size = new System.Drawing.Size(174, 639);
             this.tab7.TabIndex = 6;
             this.tab7.Text = "7";
             // 
@@ -742,14 +722,14 @@
             this.bunifuFlatButton9.IconVisible = false;
             this.bunifuFlatButton9.IconZoom = 40D;
             this.bunifuFlatButton9.IsTab = true;
-            this.bunifuFlatButton9.Location = new System.Drawing.Point(0, 47);
-            this.bunifuFlatButton9.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.bunifuFlatButton9.Location = new System.Drawing.Point(0, 38);
+            this.bunifuFlatButton9.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton9.Name = "bunifuFlatButton9";
             this.bunifuFlatButton9.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton9.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.bunifuFlatButton9.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton9.selected = false;
-            this.bunifuFlatButton9.Size = new System.Drawing.Size(235, 47);
+            this.bunifuFlatButton9.Size = new System.Drawing.Size(174, 38);
             this.bunifuFlatButton9.TabIndex = 8;
             this.bunifuFlatButton9.Text = "Nâng cao";
             this.bunifuFlatButton9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -779,13 +759,13 @@
             this.bunifuFlatButton8.IconZoom = 40D;
             this.bunifuFlatButton8.IsTab = true;
             this.bunifuFlatButton8.Location = new System.Drawing.Point(0, 0);
-            this.bunifuFlatButton8.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.bunifuFlatButton8.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton8.Name = "bunifuFlatButton8";
             this.bunifuFlatButton8.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton8.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.bunifuFlatButton8.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton8.selected = false;
-            this.bunifuFlatButton8.Size = new System.Drawing.Size(235, 47);
+            this.bunifuFlatButton8.Size = new System.Drawing.Size(174, 38);
             this.bunifuFlatButton8.TabIndex = 7;
             this.bunifuFlatButton8.Text = "Chung";
             this.bunifuFlatButton8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -796,8 +776,9 @@
             // 
             this.noneContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
             this.noneContent.Location = new System.Drawing.Point(4, 22);
+            this.noneContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.noneContent.Name = "noneContent";
-            this.noneContent.Size = new System.Drawing.Size(235, 792);
+            this.noneContent.Size = new System.Drawing.Size(174, 639);
             this.noneContent.TabIndex = 7;
             this.noneContent.Text = "8";
             // 
@@ -806,10 +787,10 @@
             this.pn_Menu_child.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.pn_Menu_child.Controls.Add(this.tc_Menu_second);
             this.pn_Menu_child.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pn_Menu_child.Location = new System.Drawing.Point(243, 44);
+            this.pn_Menu_child.Location = new System.Drawing.Point(182, 36);
             this.pn_Menu_child.Margin = new System.Windows.Forms.Padding(0);
             this.pn_Menu_child.Name = "pn_Menu_child";
-            this.pn_Menu_child.Size = new System.Drawing.Size(243, 818);
+            this.pn_Menu_child.Size = new System.Drawing.Size(182, 664);
             this.pn_Menu_child.TabIndex = 3;
             // 
             // panel3
@@ -817,10 +798,9 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.panel3.Controls.Add(this.tc_Content_Seclect);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(486, 44);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(364, 36);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1114, 818);
+            this.panel3.Size = new System.Drawing.Size(803, 664);
             this.panel3.TabIndex = 4;
             // 
             // tc_Content_Seclect
@@ -838,7 +818,7 @@
             this.tc_Content_Seclect.Name = "tc_Content_Seclect";
             this.tc_Content_Seclect.Padding = new System.Drawing.Point(0, 0);
             this.tc_Content_Seclect.SelectedIndex = 0;
-            this.tc_Content_Seclect.Size = new System.Drawing.Size(1114, 818);
+            this.tc_Content_Seclect.Size = new System.Drawing.Size(803, 664);
             this.tc_Content_Seclect.TabIndex = 0;
             // 
             // tabHome
@@ -847,10 +827,10 @@
             this.tabHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
             this.tabHome.Controls.Add(this.gunaLabel2);
             this.tabHome.Controls.Add(this.showDataRoom);
-            this.tabHome.Location = new System.Drawing.Point(4, 25);
+            this.tabHome.Location = new System.Drawing.Point(4, 22);
             this.tabHome.Margin = new System.Windows.Forms.Padding(0);
             this.tabHome.Name = "tabHome";
-            this.tabHome.Size = new System.Drawing.Size(1106, 789);
+            this.tabHome.Size = new System.Drawing.Size(795, 638);
             this.tabHome.TabIndex = 0;
             this.tabHome.Text = "1";
             // 
@@ -858,9 +838,10 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(16, 11);
+            this.gunaLabel2.Location = new System.Drawing.Point(12, 9);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(161, 25);
+            this.gunaLabel2.Size = new System.Drawing.Size(129, 20);
             this.gunaLabel2.TabIndex = 31;
             this.gunaLabel2.Text = "Danh sách phòng";
             // 
@@ -868,43 +849,43 @@
             // 
             this.showDataRoom.AllowUserToAddRows = false;
             this.showDataRoom.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.White;
-            this.showDataRoom.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.showDataRoom.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.showDataRoom.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.showDataRoom.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.showDataRoom.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
             this.showDataRoom.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showDataRoom.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.showDataRoom.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.showDataRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.showDataRoom.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.showDataRoom.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.showDataRoom.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.showDataRoom.DefaultCellStyle = dataGridViewCellStyle3;
             this.showDataRoom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.showDataRoom.EnableHeadersVisualStyles = false;
             this.showDataRoom.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
-            this.showDataRoom.Location = new System.Drawing.Point(0, 47);
-            this.showDataRoom.Margin = new System.Windows.Forms.Padding(5);
+            this.showDataRoom.Location = new System.Drawing.Point(0, 35);
+            this.showDataRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.showDataRoom.Name = "showDataRoom";
             this.showDataRoom.ReadOnly = true;
             this.showDataRoom.RowHeadersVisible = false;
             this.showDataRoom.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.showDataRoom.RowTemplate.Height = 24;
             this.showDataRoom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.showDataRoom.Size = new System.Drawing.Size(1106, 742);
+            this.showDataRoom.Size = new System.Drawing.Size(795, 603);
             this.showDataRoom.TabIndex = 30;
             this.showDataRoom.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.showDataRoom.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -933,11 +914,10 @@
             // 
             this.tabBill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
             this.tabBill.Controls.Add(this.label3);
-            this.tabBill.Location = new System.Drawing.Point(4, 25);
-            this.tabBill.Margin = new System.Windows.Forms.Padding(4);
+            this.tabBill.Location = new System.Drawing.Point(4, 22);
             this.tabBill.Name = "tabBill";
-            this.tabBill.Padding = new System.Windows.Forms.Padding(4);
-            this.tabBill.Size = new System.Drawing.Size(1106, 789);
+            this.tabBill.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabBill.Size = new System.Drawing.Size(828, 639);
             this.tabBill.TabIndex = 2;
             this.tabBill.Text = "3";
             // 
@@ -945,10 +925,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(459, 65);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(344, 53);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 29);
+            this.label3.Size = new System.Drawing.Size(85, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "Hóa Đơn";
             // 
@@ -957,11 +936,10 @@
             this.tabSevice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
             this.tabSevice.Controls.Add(this.label7);
             this.tabSevice.Controls.Add(this.label4);
-            this.tabSevice.Location = new System.Drawing.Point(4, 25);
-            this.tabSevice.Margin = new System.Windows.Forms.Padding(4);
+            this.tabSevice.Location = new System.Drawing.Point(4, 22);
             this.tabSevice.Name = "tabSevice";
-            this.tabSevice.Padding = new System.Windows.Forms.Padding(4);
-            this.tabSevice.Size = new System.Drawing.Size(1106, 789);
+            this.tabSevice.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabSevice.Size = new System.Drawing.Size(828, 639);
             this.tabSevice.TabIndex = 3;
             this.tabSevice.Text = "4";
             // 
@@ -969,20 +947,18 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(447, 112);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(335, 91);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 29);
+            this.label7.Size = new System.Drawing.Size(73, 24);
             this.label7.TabIndex = 2;
             this.label7.Text = "Dịch vụ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(529, 385);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(397, 313);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 17);
+            this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 1;
             this.label4.Text = "label4";
             // 
@@ -991,11 +967,10 @@
             this.tabEmp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
             this.tabEmp.Controls.Add(this.label8);
             this.tabEmp.Controls.Add(this.label5);
-            this.tabEmp.Location = new System.Drawing.Point(4, 25);
-            this.tabEmp.Margin = new System.Windows.Forms.Padding(4);
+            this.tabEmp.Location = new System.Drawing.Point(4, 22);
             this.tabEmp.Name = "tabEmp";
-            this.tabEmp.Padding = new System.Windows.Forms.Padding(4);
-            this.tabEmp.Size = new System.Drawing.Size(1106, 789);
+            this.tabEmp.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabEmp.Size = new System.Drawing.Size(828, 639);
             this.tabEmp.TabIndex = 4;
             this.tabEmp.Text = "5";
             // 
@@ -1003,20 +978,18 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(488, 378);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(366, 307);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(120, 29);
+            this.label8.Size = new System.Drawing.Size(96, 24);
             this.label8.TabIndex = 2;
             this.label8.Text = "Nhân viên";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(529, 385);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(397, 313);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 17);
+            this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 1;
             this.label5.Text = "label5";
             // 
@@ -1025,11 +998,10 @@
             this.tabCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
             this.tabCustomer.Controls.Add(this.gunaLabel4);
             this.tabCustomer.Controls.Add(this.showDataCustomer);
-            this.tabCustomer.Location = new System.Drawing.Point(4, 25);
-            this.tabCustomer.Margin = new System.Windows.Forms.Padding(4);
+            this.tabCustomer.Location = new System.Drawing.Point(4, 22);
             this.tabCustomer.Name = "tabCustomer";
-            this.tabCustomer.Padding = new System.Windows.Forms.Padding(4);
-            this.tabCustomer.Size = new System.Drawing.Size(1106, 789);
+            this.tabCustomer.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabCustomer.Size = new System.Drawing.Size(828, 639);
             this.tabCustomer.TabIndex = 5;
             this.tabCustomer.Text = "6";
             // 
@@ -1037,9 +1009,10 @@
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(4, 9);
+            this.gunaLabel4.Location = new System.Drawing.Point(3, 7);
+            this.gunaLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(205, 25);
+            this.gunaLabel4.Size = new System.Drawing.Size(164, 20);
             this.gunaLabel4.TabIndex = 32;
             this.gunaLabel4.Text = "Danh sách khách hàng";
             // 
@@ -1047,43 +1020,43 @@
             // 
             this.showDataCustomer.AllowUserToAddRows = false;
             this.showDataCustomer.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.White;
-            this.showDataCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.showDataCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.showDataCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.showDataCustomer.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.showDataCustomer.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
             this.showDataCustomer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.showDataCustomer.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.showDataCustomer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.showDataCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.showDataCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.showDataCustomer.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.showDataCustomer.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.showDataCustomer.DefaultCellStyle = dataGridViewCellStyle6;
             this.showDataCustomer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.showDataCustomer.EnableHeadersVisualStyles = false;
             this.showDataCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
-            this.showDataCustomer.Location = new System.Drawing.Point(4, 43);
-            this.showDataCustomer.Margin = new System.Windows.Forms.Padding(5);
+            this.showDataCustomer.Location = new System.Drawing.Point(3, 33);
+            this.showDataCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.showDataCustomer.Name = "showDataCustomer";
             this.showDataCustomer.ReadOnly = true;
             this.showDataCustomer.RowHeadersVisible = false;
             this.showDataCustomer.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.showDataCustomer.RowTemplate.Height = 24;
             this.showDataCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.showDataCustomer.Size = new System.Drawing.Size(1098, 742);
+            this.showDataCustomer.Size = new System.Drawing.Size(822, 603);
             this.showDataCustomer.TabIndex = 31;
             this.showDataCustomer.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.showDataCustomer.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -1113,9 +1086,10 @@
             this.tabSetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
             this.tabSetting.Controls.Add(this.gunaGoogleSwitch1);
             this.tabSetting.Controls.Add(this.gunaLabel3);
-            this.tabSetting.Location = new System.Drawing.Point(4, 25);
+            this.tabSetting.Location = new System.Drawing.Point(4, 22);
+            this.tabSetting.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabSetting.Name = "tabSetting";
-            this.tabSetting.Size = new System.Drawing.Size(1106, 789);
+            this.tabSetting.Size = new System.Drawing.Size(828, 639);
             this.tabSetting.TabIndex = 6;
             this.tabSetting.Text = "7";
             // 
@@ -1125,27 +1099,30 @@
             this.gunaGoogleSwitch1.CheckedOffColor = System.Drawing.Color.DarkGray;
             this.gunaGoogleSwitch1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaGoogleSwitch1.FillColor = System.Drawing.Color.White;
-            this.gunaGoogleSwitch1.Location = new System.Drawing.Point(172, 47);
+            this.gunaGoogleSwitch1.Location = new System.Drawing.Point(129, 38);
+            this.gunaGoogleSwitch1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gunaGoogleSwitch1.Name = "gunaGoogleSwitch1";
-            this.gunaGoogleSwitch1.Size = new System.Drawing.Size(38, 20);
+            this.gunaGoogleSwitch1.Size = new System.Drawing.Size(28, 16);
             this.gunaGoogleSwitch1.TabIndex = 17;
             // 
             // gunaLabel3
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel3.Location = new System.Drawing.Point(74, 47);
+            this.gunaLabel3.Location = new System.Drawing.Point(56, 38);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(73, 20);
+            this.gunaLabel3.Size = new System.Drawing.Size(60, 15);
             this.gunaLabel3.TabIndex = 16;
             this.gunaLabel3.Text = "Âm thanh";
             // 
             // tabNoneContent
             // 
             this.tabNoneContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
-            this.tabNoneContent.Location = new System.Drawing.Point(4, 25);
+            this.tabNoneContent.Location = new System.Drawing.Point(4, 22);
+            this.tabNoneContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabNoneContent.Name = "tabNoneContent";
-            this.tabNoneContent.Size = new System.Drawing.Size(1106, 789);
+            this.tabNoneContent.Size = new System.Drawing.Size(828, 639);
             this.tabNoneContent.TabIndex = 7;
             this.tabNoneContent.Text = "8";
             // 
@@ -1155,10 +1132,9 @@
             this.tc_MainMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tc_MainMenu.HotTrack = true;
             this.tc_MainMenu.Location = new System.Drawing.Point(0, 0);
-            this.tc_MainMenu.Margin = new System.Windows.Forms.Padding(4);
             this.tc_MainMenu.Name = "tc_MainMenu";
             this.tc_MainMenu.SelectedIndex = 0;
-            this.tc_MainMenu.Size = new System.Drawing.Size(243, 818);
+            this.tc_MainMenu.Size = new System.Drawing.Size(182, 664);
             this.tc_MainMenu.TabIndex = 9;
             // 
             // tabPage2
@@ -1171,10 +1147,10 @@
             this.tabPage2.Controls.Add(this.btn_service);
             this.tabPage2.Controls.Add(this.btn_bill);
             this.tabPage2.Controls.Add(this.btn_Syn);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(0);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(235, 789);
+            this.tabPage2.Size = new System.Drawing.Size(174, 638);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "1";
             // 
@@ -1200,14 +1176,14 @@
             this.bunifuFlatButton15.IconVisible = true;
             this.bunifuFlatButton15.IconZoom = 60D;
             this.bunifuFlatButton15.IsTab = true;
-            this.bunifuFlatButton15.Location = new System.Drawing.Point(0, 695);
-            this.bunifuFlatButton15.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.bunifuFlatButton15.Location = new System.Drawing.Point(0, 562);
+            this.bunifuFlatButton15.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton15.Name = "bunifuFlatButton15";
             this.bunifuFlatButton15.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton15.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.bunifuFlatButton15.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton15.selected = false;
-            this.bunifuFlatButton15.Size = new System.Drawing.Size(235, 47);
+            this.bunifuFlatButton15.Size = new System.Drawing.Size(174, 38);
             this.bunifuFlatButton15.TabIndex = 15;
             this.bunifuFlatButton15.Text = "Trợ giúp";
             this.bunifuFlatButton15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1236,14 +1212,14 @@
             this.btn_Setting.IconVisible = true;
             this.btn_Setting.IconZoom = 60D;
             this.btn_Setting.IsTab = true;
-            this.btn_Setting.Location = new System.Drawing.Point(0, 742);
-            this.btn_Setting.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_Setting.Location = new System.Drawing.Point(0, 600);
+            this.btn_Setting.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_Setting.Name = "btn_Setting";
             this.btn_Setting.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_Setting.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.btn_Setting.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_Setting.selected = false;
-            this.btn_Setting.Size = new System.Drawing.Size(235, 47);
+            this.btn_Setting.Size = new System.Drawing.Size(174, 38);
             this.btn_Setting.TabIndex = 14;
             this.btn_Setting.Text = "Cài đặt";
             this.btn_Setting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1272,14 +1248,14 @@
             this.btn_emp.IconVisible = true;
             this.btn_emp.IconZoom = 60D;
             this.btn_emp.IsTab = true;
-            this.btn_emp.Location = new System.Drawing.Point(0, 188);
-            this.btn_emp.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_emp.Location = new System.Drawing.Point(0, 152);
+            this.btn_emp.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_emp.Name = "btn_emp";
             this.btn_emp.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_emp.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.btn_emp.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_emp.selected = false;
-            this.btn_emp.Size = new System.Drawing.Size(235, 47);
+            this.btn_emp.Size = new System.Drawing.Size(174, 38);
             this.btn_emp.TabIndex = 13;
             this.btn_emp.Text = "Nhân viên";
             this.btn_emp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1309,14 +1285,14 @@
             this.btn_customer.IconVisible = true;
             this.btn_customer.IconZoom = 60D;
             this.btn_customer.IsTab = true;
-            this.btn_customer.Location = new System.Drawing.Point(0, 141);
-            this.btn_customer.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_customer.Location = new System.Drawing.Point(0, 114);
+            this.btn_customer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_customer.Name = "btn_customer";
             this.btn_customer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_customer.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.btn_customer.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_customer.selected = false;
-            this.btn_customer.Size = new System.Drawing.Size(235, 47);
+            this.btn_customer.Size = new System.Drawing.Size(174, 38);
             this.btn_customer.TabIndex = 12;
             this.btn_customer.Text = "Khách hàng";
             this.btn_customer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1346,14 +1322,14 @@
             this.btn_service.IconVisible = true;
             this.btn_service.IconZoom = 60D;
             this.btn_service.IsTab = true;
-            this.btn_service.Location = new System.Drawing.Point(0, 94);
-            this.btn_service.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_service.Location = new System.Drawing.Point(0, 76);
+            this.btn_service.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_service.Name = "btn_service";
             this.btn_service.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_service.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.btn_service.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_service.selected = false;
-            this.btn_service.Size = new System.Drawing.Size(235, 47);
+            this.btn_service.Size = new System.Drawing.Size(174, 38);
             this.btn_service.TabIndex = 11;
             this.btn_service.Text = "Dịch vụ";
             this.btn_service.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1383,14 +1359,14 @@
             this.btn_bill.IconVisible = true;
             this.btn_bill.IconZoom = 60D;
             this.btn_bill.IsTab = true;
-            this.btn_bill.Location = new System.Drawing.Point(0, 47);
-            this.btn_bill.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btn_bill.Location = new System.Drawing.Point(0, 38);
+            this.btn_bill.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btn_bill.Name = "btn_bill";
             this.btn_bill.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_bill.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
             this.btn_bill.OnHoverTextColor = System.Drawing.Color.White;
             this.btn_bill.selected = false;
-            this.btn_bill.Size = new System.Drawing.Size(235, 47);
+            this.btn_bill.Size = new System.Drawing.Size(174, 38);
             this.btn_bill.TabIndex = 10;
             this.btn_bill.Text = "Thanh toán";
             this.btn_bill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1408,25 +1384,38 @@
             this.pn_Menu_Parent.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.pn_Menu_Parent.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.pn_Menu_Parent.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.pn_Menu_Parent.Location = new System.Drawing.Point(0, 44);
-            this.pn_Menu_Parent.Margin = new System.Windows.Forms.Padding(4);
+            this.pn_Menu_Parent.Location = new System.Drawing.Point(0, 36);
             this.pn_Menu_Parent.Name = "pn_Menu_Parent";
             this.pn_Menu_Parent.Quality = 10;
-            this.pn_Menu_Parent.Size = new System.Drawing.Size(243, 818);
+            this.pn_Menu_Parent.Size = new System.Drawing.Size(182, 664);
             this.pn_Menu_Parent.TabIndex = 1;
+            // 
+            // btn_exit
+            // 
+            this.btn_exit.BackColor = System.Drawing.Color.Transparent;
+            this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
+            this.btn_exit.ImageActive = null;
+            this.btn_exit.Location = new System.Drawing.Point(1127, 4);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(35, 27);
+            this.btn_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_exit.TabIndex = 21;
+            this.btn_exit.TabStop = false;
+            this.btn_exit.Zoom = 10;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // frmHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.ClientSize = new System.Drawing.Size(1600, 862);
+            this.ClientSize = new System.Drawing.Size(1167, 700);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pn_Menu_child);
             this.Controls.Add(this.pn_Menu_Parent);
             this.Controls.Add(this.panel_control);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmHome";
             this.Opacity = 0.96D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1461,6 +1450,7 @@
             this.tc_MainMenu.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.pn_Menu_Parent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1468,7 +1458,6 @@
         #endregion
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuGradientPanel panel_control;
-        private Guna.UI.WinForms.GunaControlBox gunaControlBox1;
         private Guna.UI.WinForms.GunaDragControl gunaDragControl1;
         private System.Windows.Forms.TabControl tc_Menu_second;
         private System.Windows.Forms.TabPage tab1;
@@ -1524,5 +1513,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btn_ManagerialCustomer;
         private Bunifu.Framework.UI.BunifuFlatButton btn_ManagerialEmp;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton7;
+        private Bunifu.Framework.UI.BunifuImageButton btn_exit;
     }
 }
