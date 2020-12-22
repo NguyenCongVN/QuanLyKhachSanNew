@@ -97,6 +97,20 @@ namespace QuanLyKhachSan.GUI
         {
             tc_Menu_second.SelectedTab = tab4;
             tc_Content_Seclect.SelectedTab = tabSevice;
+            gunaDataGridView1.Columns.Clear();
+            ConnectionString cnn = new ConnectionString();
+            string con = cnn.getConnectionString(0);
+            DataSet data = new DataSet();
+
+            using (SqlConnection connect = new SqlConnection(con))
+            {
+                string query = " exec USP_LoadFullService";
+                connect.Open();
+                SqlDataAdapter apter = new SqlDataAdapter(query, connect);
+                apter.Fill(data);
+                connect.Close();
+            }
+            gunaDataGridView1.DataSource = data.Tables[0];
         }
 
         private void btn_Empoyment_Click(object sender, EventArgs e)
