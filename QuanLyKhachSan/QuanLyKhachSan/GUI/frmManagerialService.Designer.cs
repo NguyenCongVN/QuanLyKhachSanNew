@@ -38,6 +38,8 @@
             this.btn_exit = new Bunifu.Framework.UI.BunifuImageButton();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.thongtindichvu = new System.Windows.Forms.GroupBox();
+            this.txtMaloaidichvu = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.txtgia = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.txtloaidichvu = new Guna.UI.WinForms.GunaTextBox();
@@ -55,8 +57,6 @@
             this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.btnLuu = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.txtMaloaidichvu = new Guna.UI.WinForms.GunaTextBox();
             this.panel_control.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.thongtindichvu.SuspendLayout();
@@ -132,6 +132,35 @@
             this.thongtindichvu.TabIndex = 23;
             this.thongtindichvu.TabStop = false;
             this.thongtindichvu.Text = "Thông tin dịch vụ";
+            // 
+            // txtMaloaidichvu
+            // 
+            this.txtMaloaidichvu.BaseColor = System.Drawing.Color.White;
+            this.txtMaloaidichvu.BorderColor = System.Drawing.Color.Silver;
+            this.txtMaloaidichvu.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMaloaidichvu.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtMaloaidichvu.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            this.txtMaloaidichvu.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtMaloaidichvu.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaloaidichvu.ForeColor = System.Drawing.Color.Black;
+            this.txtMaloaidichvu.Location = new System.Drawing.Point(21, 255);
+            this.txtMaloaidichvu.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMaloaidichvu.Name = "txtMaloaidichvu";
+            this.txtMaloaidichvu.PasswordChar = '\0';
+            this.txtMaloaidichvu.Size = new System.Drawing.Size(204, 38);
+            this.txtMaloaidichvu.TabIndex = 32;
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.gunaLabel3.Location = new System.Drawing.Point(18, 234);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(100, 17);
+            this.gunaLabel3.TabIndex = 31;
+            this.gunaLabel3.Text = "Mã loại dịch vụ";
             // 
             // txtgia
             // 
@@ -313,6 +342,8 @@
             this.showDataService.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(217)))), ((int)(((byte)(244)))));
             this.showDataService.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.showDataService.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.showDataService_CellContentClick);
+            this.showDataService.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.showDataService_CellContentClick);
+            this.showDataService.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.showDataService_CellContentClick);
             // 
             // btnThem
             // 
@@ -553,35 +584,6 @@
             this.btnLuu.Textcolor = System.Drawing.Color.White;
             this.btnLuu.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.gunaLabel3.Location = new System.Drawing.Point(18, 234);
-            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(100, 17);
-            this.gunaLabel3.TabIndex = 31;
-            this.gunaLabel3.Text = "Mã loại dịch vụ";
-            // 
-            // txtMaloaidichvu
-            // 
-            this.txtMaloaidichvu.BaseColor = System.Drawing.Color.White;
-            this.txtMaloaidichvu.BorderColor = System.Drawing.Color.Silver;
-            this.txtMaloaidichvu.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMaloaidichvu.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtMaloaidichvu.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            this.txtMaloaidichvu.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtMaloaidichvu.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaloaidichvu.ForeColor = System.Drawing.Color.Black;
-            this.txtMaloaidichvu.Location = new System.Drawing.Point(21, 255);
-            this.txtMaloaidichvu.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMaloaidichvu.Name = "txtMaloaidichvu";
-            this.txtMaloaidichvu.PasswordChar = '\0';
-            this.txtMaloaidichvu.Size = new System.Drawing.Size(204, 38);
-            this.txtMaloaidichvu.TabIndex = 32;
             // 
             // frmManagerialService
             // 
