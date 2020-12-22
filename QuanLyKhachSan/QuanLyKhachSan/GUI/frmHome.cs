@@ -156,5 +156,11 @@ namespace QuanLyKhachSan.GUI
         {
             Environment.Exit(0);
         }
+
+        private void btn_Account_Click(object sender, EventArgs e)
+        {
+            frmAccount fa = new frmAccount();
+            fa.Show();
+        }
     }
 }
