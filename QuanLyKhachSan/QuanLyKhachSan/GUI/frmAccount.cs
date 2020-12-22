@@ -51,7 +51,7 @@ namespace QuanLyKhachSan.GUI
         }
         private void btn_Logout_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Restart();
         }
     }
 }
