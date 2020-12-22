@@ -16,5 +16,20 @@ namespace QuanLyKhachSan.GUI
         {
             InitializeComponent();
         }
+
+        private void gunaLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
