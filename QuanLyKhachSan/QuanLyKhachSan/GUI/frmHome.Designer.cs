@@ -94,6 +94,7 @@
             this.btn_bill = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pn_Menu_Parent = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btn_exit = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btn_Account = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel_control.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btn_controlMenu)).BeginInit();
             this.tc_Menu_second.SuspendLayout();
@@ -167,7 +168,7 @@
             this.btn_controlMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_controlMenu.TabIndex = 1;
             this.btn_controlMenu.TabStop = false;
-            this.btn_controlMenu.Zoom = 10;
+            this.btn_controlMenu.Zoom = 2;
             this.btn_controlMenu.Click += new System.EventHandler(this.btn_controlMenu_Click);
             // 
             // gunaDragControl1
@@ -691,12 +692,13 @@
             // tab7
             // 
             this.tab7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
+            this.tab7.Controls.Add(this.btn_Account);
             this.tab7.Controls.Add(this.bunifuFlatButton9);
             this.tab7.Controls.Add(this.bunifuFlatButton8);
             this.tab7.Location = new System.Drawing.Point(4, 22);
             this.tab7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tab7.Name = "tab7";
-            this.tab7.Size = new System.Drawing.Size(174, 639);
+            this.tab7.Size = new System.Drawing.Size(174, 638);
             this.tab7.TabIndex = 6;
             this.tab7.Text = "7";
             // 
@@ -778,7 +780,7 @@
             this.noneContent.Location = new System.Drawing.Point(4, 22);
             this.noneContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.noneContent.Name = "noneContent";
-            this.noneContent.Size = new System.Drawing.Size(174, 639);
+            this.noneContent.Size = new System.Drawing.Size(174, 638);
             this.noneContent.TabIndex = 7;
             this.noneContent.Text = "8";
             // 
@@ -1089,7 +1091,7 @@
             this.tabSetting.Location = new System.Drawing.Point(4, 22);
             this.tabSetting.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabSetting.Name = "tabSetting";
-            this.tabSetting.Size = new System.Drawing.Size(828, 639);
+            this.tabSetting.Size = new System.Drawing.Size(795, 638);
             this.tabSetting.TabIndex = 6;
             this.tabSetting.Text = "7";
             // 
@@ -1102,7 +1104,7 @@
             this.gunaGoogleSwitch1.Location = new System.Drawing.Point(129, 38);
             this.gunaGoogleSwitch1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gunaGoogleSwitch1.Name = "gunaGoogleSwitch1";
-            this.gunaGoogleSwitch1.Size = new System.Drawing.Size(28, 16);
+            this.gunaGoogleSwitch1.Size = new System.Drawing.Size(44, 25);
             this.gunaGoogleSwitch1.TabIndex = 17;
             // 
             // gunaLabel3
@@ -1122,7 +1124,7 @@
             this.tabNoneContent.Location = new System.Drawing.Point(4, 22);
             this.tabNoneContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabNoneContent.Name = "tabNoneContent";
-            this.tabNoneContent.Size = new System.Drawing.Size(828, 639);
+            this.tabNoneContent.Size = new System.Drawing.Size(795, 638);
             this.tabNoneContent.TabIndex = 7;
             this.tabNoneContent.Text = "8";
             // 
@@ -1225,6 +1227,7 @@
             this.btn_Setting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_Setting.Textcolor = System.Drawing.Color.White;
             this.btn_Setting.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Setting.Click += new System.EventHandler(this.btn_Setting_Click);
             // 
             // btn_emp
             // 
@@ -1401,8 +1404,45 @@
             this.btn_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btn_exit.TabIndex = 21;
             this.btn_exit.TabStop = false;
-            this.btn_exit.Zoom = 10;
+            this.btn_exit.Zoom = 2;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
+            // btn_Account
+            // 
+            this.btn_Account.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
+            this.btn_Account.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
+            this.btn_Account.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Account.BorderRadius = 0;
+            this.btn_Account.ButtonText = "Tài khoản";
+            this.btn_Account.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Account.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_Account.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Account.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_Account.Iconimage = null;
+            this.btn_Account.Iconimage_right = null;
+            this.btn_Account.Iconimage_right_Selected = null;
+            this.btn_Account.Iconimage_Selected = null;
+            this.btn_Account.IconMarginLeft = 0;
+            this.btn_Account.IconMarginRight = 0;
+            this.btn_Account.IconRightVisible = false;
+            this.btn_Account.IconRightZoom = 0D;
+            this.btn_Account.IconVisible = false;
+            this.btn_Account.IconZoom = 40D;
+            this.btn_Account.IsTab = true;
+            this.btn_Account.Location = new System.Drawing.Point(0, 76);
+            this.btn_Account.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Account.Name = "btn_Account";
+            this.btn_Account.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
+            this.btn_Account.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
+            this.btn_Account.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_Account.selected = false;
+            this.btn_Account.Size = new System.Drawing.Size(174, 38);
+            this.btn_Account.TabIndex = 9;
+            this.btn_Account.Text = "Tài khoản";
+            this.btn_Account.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Account.Textcolor = System.Drawing.Color.White;
+            this.btn_Account.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Account.Click += new System.EventHandler(this.btn_Account_Click);
             // 
             // frmHome
             // 
@@ -1514,5 +1554,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btn_ManagerialEmp;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton7;
         private Bunifu.Framework.UI.BunifuImageButton btn_exit;
+        private Bunifu.Framework.UI.BunifuFlatButton btn_Account;
     }
 }
