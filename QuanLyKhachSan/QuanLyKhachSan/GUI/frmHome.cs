@@ -136,20 +136,20 @@ namespace QuanLyKhachSan.GUI
 
         private void btn_ManagerialService_Click(object sender, EventArgs e)
         {
-          //  frmManagerialService a = new frmManagerialService();
-          //  a.Show();
+            frmManagerialService a = new frmManagerialService();
+            a.Show();
         }
 
         private void btn_bookRoom_Click(object sender, EventArgs e)
         {
-             frmBookRoom a = new frmBookRoom();
-             a.Show();
+            frmBookRoom a = new frmBookRoom();
+            a.Show();
         }
 
         private void btn_checkInRoom_Click(object sender, EventArgs e)
         {
-              frmCheckInRoom a = new frmCheckInRoom();
-              a.Show();
+            frmCheckInRoom a = new frmCheckInRoom();
+            a.Show();
         }
     }
 }
