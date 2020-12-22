@@ -62,6 +62,15 @@ namespace QuanLyKhachSan.GUI
         {
             thongtindichvu.Enabled = true;
         }
+        private void ClearControl()
+        {
+            txttendichvu.Text = "";
+            txtMaloaidichvu.Text = "";
+            txtmadichvu.Text = "";
+            txtloaidichvu.Text = "";
+            txtgia.Text = "";
+           
+        }
         private void frmManagerialService_Load(object sender, EventArgs e)
         {
             string query = " exec USP_LoadFullService";
@@ -81,7 +90,8 @@ namespace QuanLyKhachSan.GUI
 
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
-
+            UnlockControl();
+            ClearControl();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
