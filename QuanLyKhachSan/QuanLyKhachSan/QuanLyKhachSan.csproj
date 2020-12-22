@@ -55,6 +55,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAcess\ConnectionString.cs" />
+    <Compile Include="GUI\frmBookRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmBookRoom.Designer.cs">
+      <DependentUpon>frmBookRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmHome.cs">
       <SubType>Form</SubType>
     </Compile>
