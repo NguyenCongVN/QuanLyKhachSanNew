@@ -38,6 +38,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel_control = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btn_exit = new Bunifu.Framework.UI.BunifuImageButton();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.btn_controlMenu = new Bunifu.Framework.UI.BunifuImageButton();
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
@@ -60,6 +61,7 @@
             this.btn_ManagerialCustomer = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tab7 = new System.Windows.Forms.TabPage();
+            this.btn_Account = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton9 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton8 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.noneContent = new System.Windows.Forms.TabPage();
@@ -93,9 +95,8 @@
             this.btn_service = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btn_bill = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pn_Menu_Parent = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.btn_exit = new Bunifu.Framework.UI.BunifuImageButton();
-            this.btn_Account = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel_control.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_controlMenu)).BeginInit();
             this.tc_Menu_second.SuspendLayout();
             this.tab1.SuspendLayout();
@@ -118,7 +119,6 @@
             this.tc_MainMenu.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.pn_Menu_Parent.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -144,8 +144,24 @@
             this.panel_control.Size = new System.Drawing.Size(1167, 36);
             this.panel_control.TabIndex = 0;
             // 
+            // btn_exit
+            // 
+            this.btn_exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_exit.BackColor = System.Drawing.Color.Transparent;
+            this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
+            this.btn_exit.ImageActive = null;
+            this.btn_exit.Location = new System.Drawing.Point(1127, 4);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(35, 27);
+            this.btn_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btn_exit.TabIndex = 21;
+            this.btn_exit.TabStop = false;
+            this.btn_exit.Zoom = 2;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
             // gunaLabel1
             // 
+            this.gunaLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -198,7 +214,7 @@
             this.btn_Syn.IconZoom = 60D;
             this.btn_Syn.IsTab = true;
             this.btn_Syn.Location = new System.Drawing.Point(0, 0);
-            this.btn_Syn.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_Syn.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Syn.Name = "btn_Syn";
             this.btn_Syn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_Syn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -265,7 +281,7 @@
             this.btn_checkInRoom.IconZoom = 40D;
             this.btn_checkInRoom.IsTab = true;
             this.btn_checkInRoom.Location = new System.Drawing.Point(0, 76);
-            this.btn_checkInRoom.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_checkInRoom.Margin = new System.Windows.Forms.Padding(5);
             this.btn_checkInRoom.Name = "btn_checkInRoom";
             this.btn_checkInRoom.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_checkInRoom.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -302,7 +318,7 @@
             this.btn_bookRoom.IconZoom = 40D;
             this.btn_bookRoom.IsTab = true;
             this.btn_bookRoom.Location = new System.Drawing.Point(0, 38);
-            this.btn_bookRoom.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_bookRoom.Margin = new System.Windows.Forms.Padding(5);
             this.btn_bookRoom.Name = "btn_bookRoom";
             this.btn_bookRoom.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_bookRoom.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -339,7 +355,7 @@
             this.bunifuFlatButton4.IconZoom = 40D;
             this.bunifuFlatButton4.IsTab = true;
             this.bunifuFlatButton4.Location = new System.Drawing.Point(0, 0);
-            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuFlatButton4.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton4.Name = "bunifuFlatButton4";
             this.bunifuFlatButton4.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton4.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -359,7 +375,7 @@
             this.tab3.Controls.Add(this.bunifuFlatButton6);
             this.tab3.Location = new System.Drawing.Point(4, 22);
             this.tab3.Name = "tab3";
-            this.tab3.Size = new System.Drawing.Size(174, 639);
+            this.tab3.Size = new System.Drawing.Size(174, 638);
             this.tab3.TabIndex = 2;
             this.tab3.Text = "3";
             // 
@@ -386,7 +402,7 @@
             this.bunifuFlatButton7.IconZoom = 40D;
             this.bunifuFlatButton7.IsTab = true;
             this.bunifuFlatButton7.Location = new System.Drawing.Point(0, 38);
-            this.bunifuFlatButton7.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuFlatButton7.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton7.Name = "bunifuFlatButton7";
             this.bunifuFlatButton7.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton7.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -422,7 +438,7 @@
             this.bunifuFlatButton6.IconZoom = 40D;
             this.bunifuFlatButton6.IsTab = true;
             this.bunifuFlatButton6.Location = new System.Drawing.Point(0, 0);
-            this.bunifuFlatButton6.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuFlatButton6.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton6.Name = "bunifuFlatButton6";
             this.bunifuFlatButton6.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton6.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -442,7 +458,7 @@
             this.tab4.Controls.Add(this.bunifuFlatButton11);
             this.tab4.Location = new System.Drawing.Point(4, 22);
             this.tab4.Name = "tab4";
-            this.tab4.Size = new System.Drawing.Size(174, 639);
+            this.tab4.Size = new System.Drawing.Size(174, 638);
             this.tab4.TabIndex = 3;
             this.tab4.Text = "4";
             // 
@@ -469,7 +485,7 @@
             this.btn_ManagerialService.IconZoom = 40D;
             this.btn_ManagerialService.IsTab = true;
             this.btn_ManagerialService.Location = new System.Drawing.Point(0, 38);
-            this.btn_ManagerialService.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_ManagerialService.Margin = new System.Windows.Forms.Padding(5);
             this.btn_ManagerialService.Name = "btn_ManagerialService";
             this.btn_ManagerialService.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_ManagerialService.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -506,7 +522,7 @@
             this.bunifuFlatButton11.IconZoom = 40D;
             this.bunifuFlatButton11.IsTab = true;
             this.bunifuFlatButton11.Location = new System.Drawing.Point(0, 0);
-            this.bunifuFlatButton11.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuFlatButton11.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton11.Name = "bunifuFlatButton11";
             this.bunifuFlatButton11.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton11.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -527,7 +543,7 @@
             this.tab5.Location = new System.Drawing.Point(4, 22);
             this.tab5.Margin = new System.Windows.Forms.Padding(0);
             this.tab5.Name = "tab5";
-            this.tab5.Size = new System.Drawing.Size(174, 639);
+            this.tab5.Size = new System.Drawing.Size(174, 638);
             this.tab5.TabIndex = 4;
             this.tab5.Text = "5";
             // 
@@ -554,7 +570,7 @@
             this.btn_ManagerialEmp.IconZoom = 40D;
             this.btn_ManagerialEmp.IsTab = true;
             this.btn_ManagerialEmp.Location = new System.Drawing.Point(0, 38);
-            this.btn_ManagerialEmp.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_ManagerialEmp.Margin = new System.Windows.Forms.Padding(5);
             this.btn_ManagerialEmp.Name = "btn_ManagerialEmp";
             this.btn_ManagerialEmp.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_ManagerialEmp.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -591,7 +607,7 @@
             this.bunifuFlatButton12.IconZoom = 40D;
             this.bunifuFlatButton12.IsTab = true;
             this.bunifuFlatButton12.Location = new System.Drawing.Point(0, 0);
-            this.bunifuFlatButton12.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuFlatButton12.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton12.Name = "bunifuFlatButton12";
             this.bunifuFlatButton12.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton12.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -612,7 +628,7 @@
             this.tab6.Location = new System.Drawing.Point(4, 22);
             this.tab6.Margin = new System.Windows.Forms.Padding(0);
             this.tab6.Name = "tab6";
-            this.tab6.Size = new System.Drawing.Size(174, 639);
+            this.tab6.Size = new System.Drawing.Size(174, 638);
             this.tab6.TabIndex = 5;
             this.tab6.Text = "6";
             // 
@@ -639,7 +655,7 @@
             this.btn_ManagerialCustomer.IconZoom = 40D;
             this.btn_ManagerialCustomer.IsTab = true;
             this.btn_ManagerialCustomer.Location = new System.Drawing.Point(0, 38);
-            this.btn_ManagerialCustomer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_ManagerialCustomer.Margin = new System.Windows.Forms.Padding(5);
             this.btn_ManagerialCustomer.Name = "btn_ManagerialCustomer";
             this.btn_ManagerialCustomer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_ManagerialCustomer.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -676,7 +692,7 @@
             this.bunifuFlatButton1.IconZoom = 40D;
             this.bunifuFlatButton1.IsTab = true;
             this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -696,11 +712,48 @@
             this.tab7.Controls.Add(this.bunifuFlatButton9);
             this.tab7.Controls.Add(this.bunifuFlatButton8);
             this.tab7.Location = new System.Drawing.Point(4, 22);
-            this.tab7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tab7.Margin = new System.Windows.Forms.Padding(2);
             this.tab7.Name = "tab7";
             this.tab7.Size = new System.Drawing.Size(174, 638);
             this.tab7.TabIndex = 6;
             this.tab7.Text = "7";
+            // 
+            // btn_Account
+            // 
+            this.btn_Account.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
+            this.btn_Account.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
+            this.btn_Account.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Account.BorderRadius = 0;
+            this.btn_Account.ButtonText = "Tài khoản";
+            this.btn_Account.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Account.DisabledColor = System.Drawing.Color.Gray;
+            this.btn_Account.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Account.Iconcolor = System.Drawing.Color.Transparent;
+            this.btn_Account.Iconimage = null;
+            this.btn_Account.Iconimage_right = null;
+            this.btn_Account.Iconimage_right_Selected = null;
+            this.btn_Account.Iconimage_Selected = null;
+            this.btn_Account.IconMarginLeft = 0;
+            this.btn_Account.IconMarginRight = 0;
+            this.btn_Account.IconRightVisible = false;
+            this.btn_Account.IconRightZoom = 0D;
+            this.btn_Account.IconVisible = false;
+            this.btn_Account.IconZoom = 40D;
+            this.btn_Account.IsTab = true;
+            this.btn_Account.Location = new System.Drawing.Point(0, 76);
+            this.btn_Account.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Account.Name = "btn_Account";
+            this.btn_Account.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
+            this.btn_Account.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
+            this.btn_Account.OnHoverTextColor = System.Drawing.Color.White;
+            this.btn_Account.selected = false;
+            this.btn_Account.Size = new System.Drawing.Size(174, 38);
+            this.btn_Account.TabIndex = 9;
+            this.btn_Account.Text = "Tài khoản";
+            this.btn_Account.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_Account.Textcolor = System.Drawing.Color.White;
+            this.btn_Account.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Account.Click += new System.EventHandler(this.btn_Account_Click);
             // 
             // bunifuFlatButton9
             // 
@@ -725,7 +778,7 @@
             this.bunifuFlatButton9.IconZoom = 40D;
             this.bunifuFlatButton9.IsTab = true;
             this.bunifuFlatButton9.Location = new System.Drawing.Point(0, 38);
-            this.bunifuFlatButton9.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuFlatButton9.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton9.Name = "bunifuFlatButton9";
             this.bunifuFlatButton9.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton9.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -761,7 +814,7 @@
             this.bunifuFlatButton8.IconZoom = 40D;
             this.bunifuFlatButton8.IsTab = true;
             this.bunifuFlatButton8.Location = new System.Drawing.Point(0, 0);
-            this.bunifuFlatButton8.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuFlatButton8.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton8.Name = "bunifuFlatButton8";
             this.bunifuFlatButton8.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton8.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -778,7 +831,7 @@
             // 
             this.noneContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
             this.noneContent.Location = new System.Drawing.Point(4, 22);
-            this.noneContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.noneContent.Margin = new System.Windows.Forms.Padding(2);
             this.noneContent.Name = "noneContent";
             this.noneContent.Size = new System.Drawing.Size(174, 638);
             this.noneContent.TabIndex = 7;
@@ -880,7 +933,7 @@
             this.showDataRoom.EnableHeadersVisualStyles = false;
             this.showDataRoom.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
             this.showDataRoom.Location = new System.Drawing.Point(0, 35);
-            this.showDataRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.showDataRoom.Margin = new System.Windows.Forms.Padding(4);
             this.showDataRoom.Name = "showDataRoom";
             this.showDataRoom.ReadOnly = true;
             this.showDataRoom.RowHeadersVisible = false;
@@ -918,8 +971,8 @@
             this.tabBill.Controls.Add(this.label3);
             this.tabBill.Location = new System.Drawing.Point(4, 22);
             this.tabBill.Name = "tabBill";
-            this.tabBill.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabBill.Size = new System.Drawing.Size(828, 639);
+            this.tabBill.Padding = new System.Windows.Forms.Padding(3);
+            this.tabBill.Size = new System.Drawing.Size(795, 638);
             this.tabBill.TabIndex = 2;
             this.tabBill.Text = "3";
             // 
@@ -940,8 +993,8 @@
             this.tabSevice.Controls.Add(this.label4);
             this.tabSevice.Location = new System.Drawing.Point(4, 22);
             this.tabSevice.Name = "tabSevice";
-            this.tabSevice.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabSevice.Size = new System.Drawing.Size(828, 639);
+            this.tabSevice.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSevice.Size = new System.Drawing.Size(795, 638);
             this.tabSevice.TabIndex = 3;
             this.tabSevice.Text = "4";
             // 
@@ -971,8 +1024,8 @@
             this.tabEmp.Controls.Add(this.label5);
             this.tabEmp.Location = new System.Drawing.Point(4, 22);
             this.tabEmp.Name = "tabEmp";
-            this.tabEmp.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabEmp.Size = new System.Drawing.Size(828, 639);
+            this.tabEmp.Padding = new System.Windows.Forms.Padding(3);
+            this.tabEmp.Size = new System.Drawing.Size(795, 638);
             this.tabEmp.TabIndex = 4;
             this.tabEmp.Text = "5";
             // 
@@ -1002,8 +1055,8 @@
             this.tabCustomer.Controls.Add(this.showDataCustomer);
             this.tabCustomer.Location = new System.Drawing.Point(4, 22);
             this.tabCustomer.Name = "tabCustomer";
-            this.tabCustomer.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabCustomer.Size = new System.Drawing.Size(828, 639);
+            this.tabCustomer.Padding = new System.Windows.Forms.Padding(3);
+            this.tabCustomer.Size = new System.Drawing.Size(795, 638);
             this.tabCustomer.TabIndex = 5;
             this.tabCustomer.Text = "6";
             // 
@@ -1050,15 +1103,15 @@
             this.showDataCustomer.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.showDataCustomer.EnableHeadersVisualStyles = false;
             this.showDataCustomer.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
-            this.showDataCustomer.Location = new System.Drawing.Point(3, 33);
-            this.showDataCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.showDataCustomer.Location = new System.Drawing.Point(3, 32);
+            this.showDataCustomer.Margin = new System.Windows.Forms.Padding(4);
             this.showDataCustomer.Name = "showDataCustomer";
             this.showDataCustomer.ReadOnly = true;
             this.showDataCustomer.RowHeadersVisible = false;
             this.showDataCustomer.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.showDataCustomer.RowTemplate.Height = 24;
             this.showDataCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.showDataCustomer.Size = new System.Drawing.Size(822, 603);
+            this.showDataCustomer.Size = new System.Drawing.Size(789, 603);
             this.showDataCustomer.TabIndex = 31;
             this.showDataCustomer.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.showDataCustomer.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -1089,7 +1142,7 @@
             this.tabSetting.Controls.Add(this.gunaGoogleSwitch1);
             this.tabSetting.Controls.Add(this.gunaLabel3);
             this.tabSetting.Location = new System.Drawing.Point(4, 22);
-            this.tabSetting.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabSetting.Margin = new System.Windows.Forms.Padding(2);
             this.tabSetting.Name = "tabSetting";
             this.tabSetting.Size = new System.Drawing.Size(795, 638);
             this.tabSetting.TabIndex = 6;
@@ -1102,7 +1155,7 @@
             this.gunaGoogleSwitch1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaGoogleSwitch1.FillColor = System.Drawing.Color.White;
             this.gunaGoogleSwitch1.Location = new System.Drawing.Point(129, 38);
-            this.gunaGoogleSwitch1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gunaGoogleSwitch1.Margin = new System.Windows.Forms.Padding(2);
             this.gunaGoogleSwitch1.Name = "gunaGoogleSwitch1";
             this.gunaGoogleSwitch1.Size = new System.Drawing.Size(44, 25);
             this.gunaGoogleSwitch1.TabIndex = 17;
@@ -1122,7 +1175,7 @@
             // 
             this.tabNoneContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(234)))), ((int)(((byte)(238)))));
             this.tabNoneContent.Location = new System.Drawing.Point(4, 22);
-            this.tabNoneContent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabNoneContent.Margin = new System.Windows.Forms.Padding(2);
             this.tabNoneContent.Name = "tabNoneContent";
             this.tabNoneContent.Size = new System.Drawing.Size(795, 638);
             this.tabNoneContent.TabIndex = 7;
@@ -1179,7 +1232,7 @@
             this.bunifuFlatButton15.IconZoom = 60D;
             this.bunifuFlatButton15.IsTab = true;
             this.bunifuFlatButton15.Location = new System.Drawing.Point(0, 562);
-            this.bunifuFlatButton15.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuFlatButton15.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuFlatButton15.Name = "bunifuFlatButton15";
             this.bunifuFlatButton15.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.bunifuFlatButton15.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -1215,7 +1268,7 @@
             this.btn_Setting.IconZoom = 60D;
             this.btn_Setting.IsTab = true;
             this.btn_Setting.Location = new System.Drawing.Point(0, 600);
-            this.btn_Setting.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_Setting.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Setting.Name = "btn_Setting";
             this.btn_Setting.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_Setting.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -1252,7 +1305,7 @@
             this.btn_emp.IconZoom = 60D;
             this.btn_emp.IsTab = true;
             this.btn_emp.Location = new System.Drawing.Point(0, 152);
-            this.btn_emp.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_emp.Margin = new System.Windows.Forms.Padding(5);
             this.btn_emp.Name = "btn_emp";
             this.btn_emp.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_emp.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -1289,7 +1342,7 @@
             this.btn_customer.IconZoom = 60D;
             this.btn_customer.IsTab = true;
             this.btn_customer.Location = new System.Drawing.Point(0, 114);
-            this.btn_customer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_customer.Margin = new System.Windows.Forms.Padding(5);
             this.btn_customer.Name = "btn_customer";
             this.btn_customer.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_customer.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -1326,7 +1379,7 @@
             this.btn_service.IconZoom = 60D;
             this.btn_service.IsTab = true;
             this.btn_service.Location = new System.Drawing.Point(0, 76);
-            this.btn_service.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_service.Margin = new System.Windows.Forms.Padding(5);
             this.btn_service.Name = "btn_service";
             this.btn_service.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_service.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -1363,7 +1416,7 @@
             this.btn_bill.IconZoom = 60D;
             this.btn_bill.IsTab = true;
             this.btn_bill.Location = new System.Drawing.Point(0, 38);
-            this.btn_bill.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_bill.Margin = new System.Windows.Forms.Padding(5);
             this.btn_bill.Name = "btn_bill";
             this.btn_bill.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
             this.btn_bill.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
@@ -1393,57 +1446,6 @@
             this.pn_Menu_Parent.Size = new System.Drawing.Size(182, 664);
             this.pn_Menu_Parent.TabIndex = 1;
             // 
-            // btn_exit
-            // 
-            this.btn_exit.BackColor = System.Drawing.Color.Transparent;
-            this.btn_exit.Image = ((System.Drawing.Image)(resources.GetObject("btn_exit.Image")));
-            this.btn_exit.ImageActive = null;
-            this.btn_exit.Location = new System.Drawing.Point(1127, 4);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(35, 27);
-            this.btn_exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btn_exit.TabIndex = 21;
-            this.btn_exit.TabStop = false;
-            this.btn_exit.Zoom = 2;
-            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
-            // 
-            // btn_Account
-            // 
-            this.btn_Account.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(109)))), ((int)(((byte)(118)))));
-            this.btn_Account.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
-            this.btn_Account.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Account.BorderRadius = 0;
-            this.btn_Account.ButtonText = "Tài khoản";
-            this.btn_Account.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_Account.DisabledColor = System.Drawing.Color.Gray;
-            this.btn_Account.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Account.Iconcolor = System.Drawing.Color.Transparent;
-            this.btn_Account.Iconimage = null;
-            this.btn_Account.Iconimage_right = null;
-            this.btn_Account.Iconimage_right_Selected = null;
-            this.btn_Account.Iconimage_Selected = null;
-            this.btn_Account.IconMarginLeft = 0;
-            this.btn_Account.IconMarginRight = 0;
-            this.btn_Account.IconRightVisible = false;
-            this.btn_Account.IconRightZoom = 0D;
-            this.btn_Account.IconVisible = false;
-            this.btn_Account.IconZoom = 40D;
-            this.btn_Account.IsTab = true;
-            this.btn_Account.Location = new System.Drawing.Point(0, 76);
-            this.btn_Account.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_Account.Name = "btn_Account";
-            this.btn_Account.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(154)))), ((int)(((byte)(167)))));
-            this.btn_Account.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(195)))), ((int)(((byte)(211)))));
-            this.btn_Account.OnHoverTextColor = System.Drawing.Color.White;
-            this.btn_Account.selected = false;
-            this.btn_Account.Size = new System.Drawing.Size(174, 38);
-            this.btn_Account.TabIndex = 9;
-            this.btn_Account.Text = "Tài khoản";
-            this.btn_Account.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btn_Account.Textcolor = System.Drawing.Color.White;
-            this.btn_Account.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Account.Click += new System.EventHandler(this.btn_Account_Click);
-            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1455,13 +1457,14 @@
             this.Controls.Add(this.pn_Menu_Parent);
             this.Controls.Add(this.panel_control);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHome";
             this.Opacity = 0.96D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmHome";
             this.panel_control.ResumeLayout(false);
             this.panel_control.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_controlMenu)).EndInit();
             this.tc_Menu_second.ResumeLayout(false);
             this.tab1.ResumeLayout(false);
@@ -1490,7 +1493,6 @@
             this.tc_MainMenu.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.pn_Menu_Parent.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btn_exit)).EndInit();
             this.ResumeLayout(false);
 
         }
