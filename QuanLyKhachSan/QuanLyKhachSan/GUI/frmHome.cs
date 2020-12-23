@@ -15,10 +15,6 @@ namespace QuanLyKhachSan.GUI
 {
     public partial class frmHome : Form
     {
-        SqlConnection conn;
-        ConnectionString cnn = new ConnectionString();
-        SqlDataAdapter adap;
-        string query = "";
         int WIDTH_MENU_MAX = 182;
         int WIDTH_MENU_MIN = 50;
         public frmHome()
@@ -36,7 +32,15 @@ namespace QuanLyKhachSan.GUI
             this.hideMenu();
             tc_Menu_second.SelectedTab = noneContent;
             tc_Content_Seclect.SelectedTab = tabNoneContent;
-            
+            if(frmLogin.checkLogin == 1)
+            {
+                MessageBox.Show("Đăng nhập thành công");
+            }
+            else
+            {
+                MessageBox.Show("Lỗi");
+                this.Close();
+            }
         }
         private void initData(string query, GunaDataGridView showData)
         {
@@ -98,19 +102,19 @@ namespace QuanLyKhachSan.GUI
             tc_Content_Seclect.SelectedTab = tabSevice;
             ShowdataService.Columns.Clear();
 
-
+           
             string query = " exec USP_LoadFullService";
-
+                
             initData(query, ShowdataService);
-
+            
         }
 
         private void btn_Empoyment_Click(object sender, EventArgs e)
         {
             tc_Menu_second.SelectedTab = tab5;
             tc_Content_Seclect.SelectedTab = tabEmp;
-            string query = "SELECT * FROM dbo.STAFF";
-            initData(query, showDataEmp);
+            string query = "exec  ";
+            initData(query, showDataCustomer);
         }
 
         private void btn_Customer_Click(object sender, EventArgs e)
@@ -182,24 +186,6 @@ namespace QuanLyKhachSan.GUI
         {
             frmAccount fa = new frmAccount();
             fa.Show();
-        }
-
-        private void bunifuFlatButton4_Click(object sender, EventArgs e)
-        {
-            DataTable data_phong = new DataTable();
-            using (conn = new SqlConnection(cnn.getConnectionString(1)))
-            {
-                conn.Open();
-                query = "DS_Phong";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                adap = new SqlDataAdapter(cmd);
-                adap.Fill(data_phong);
-                showDataRoom.DataSource = data_phong;
-                conn.Close();
-
-
-            }
         }
     }
 }
