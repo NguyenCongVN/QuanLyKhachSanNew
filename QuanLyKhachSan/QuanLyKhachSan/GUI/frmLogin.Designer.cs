@@ -40,6 +40,8 @@
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaControlBox1 = new Guna.UI.WinForms.GunaControlBox();
             this.gunaDragControl2 = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.chk_savedAcc = new Guna.UI.WinForms.GunaMediumCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +68,7 @@
             this.btn_Login.Image = null;
             this.btn_Login.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_Login.LineColor = System.Drawing.Color.Black;
-            this.btn_Login.Location = new System.Drawing.Point(359, 511);
+            this.btn_Login.Location = new System.Drawing.Point(356, 562);
             this.btn_Login.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(184)))), ((int)(((byte)(234)))));
@@ -176,6 +178,28 @@
             // 
             this.gunaDragControl2.TargetControl = this.gunaPictureBox1;
             // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel3.Location = new System.Drawing.Point(387, 502);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(197, 20);
+            this.gunaLabel3.TabIndex = 14;
+            this.gunaLabel3.Text = "Bạn có muốn lưu mật khẩu ?";
+            // 
+            // chk_savedAcc
+            // 
+            this.chk_savedAcc.BaseColor = System.Drawing.Color.White;
+            this.chk_savedAcc.CheckedOffColor = System.Drawing.Color.Black;
+            this.chk_savedAcc.CheckedOnColor = System.Drawing.Color.Black;
+            this.chk_savedAcc.FillColor = System.Drawing.Color.White;
+            this.chk_savedAcc.Location = new System.Drawing.Point(355, 502);
+            this.chk_savedAcc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chk_savedAcc.Name = "chk_savedAcc";
+            this.chk_savedAcc.Size = new System.Drawing.Size(20, 20);
+            this.chk_savedAcc.TabIndex = 15;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -185,6 +209,8 @@
             this.Controls.Add(this.gunaControlBox1);
             this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.btn_Login);
+            this.Controls.Add(this.chk_savedAcc);
+            this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.txt_pass);
@@ -213,5 +239,7 @@
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         private Guna.UI.WinForms.GunaControlBox gunaControlBox1;
         private Guna.UI.WinForms.GunaDragControl gunaDragControl2;
+        private Guna.UI.WinForms.GunaMediumCheckBox chk_savedAcc;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
     }
 }
