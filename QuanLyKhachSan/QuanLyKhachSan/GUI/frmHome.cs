@@ -32,15 +32,6 @@ namespace QuanLyKhachSan.GUI
             this.hideMenu();
             tc_Menu_second.SelectedTab = noneContent;
             tc_Content_Seclect.SelectedTab = tabNoneContent;
-            if(frmLogin.checkLogin == 1)
-            {
-                MessageBox.Show("Đăng nhập thành công");
-            }
-            else
-            {
-                MessageBox.Show("Lỗi");
-                this.Close();
-            }
         }
         private void initData(string query, GunaDataGridView showData)
         {
@@ -62,7 +53,9 @@ namespace QuanLyKhachSan.GUI
             pn_Menu_Parent.Width = WIDTH_MENU_MAX;
             btn_bill.Text = "Thanh Toán";
             btn_customer.Text = "Khách hàng";
+            btn_emp.Text = "Nhân viên";
             btn_Syn.Text = "Trang chủ";
+            btn_service.Text = "Dịch vụ";
 
         }
         private void hideMenu()
@@ -71,7 +64,9 @@ namespace QuanLyKhachSan.GUI
 
             btn_bill.Text = "";
             btn_customer.Text = "";
+            btn_emp.Text = "";
             btn_Syn.Text = "";
+            btn_service.Text = "";
 
         }
         private void btn_Syn_Click(object sender, EventArgs e)
@@ -87,18 +82,18 @@ namespace QuanLyKhachSan.GUI
         {
             tc_Menu_second.SelectedTab = tab3;
             tc_Content_Seclect.SelectedTab = tabBill;
-            string query = " exec USP_LoadFULLBILL";
-
-            initData(query, showdataBill);
         }
 
+        private void btn_Sevice_Click(object sender, EventArgs e)
+        {
+            tc_Menu_second.SelectedTab = tab4;
+            tc_Content_Seclect.SelectedTab = tabSevice;
+        }
 
         private void btn_Empoyment_Click(object sender, EventArgs e)
         {
             tc_Menu_second.SelectedTab = tab5;
             tc_Content_Seclect.SelectedTab = tabEmp;
-            string query = "exec [dbo].[USP_LoadFullStaff]";
-            initData(query, showDataCustomer);
         }
 
         private void btn_Customer_Click(object sender, EventArgs e)
@@ -129,112 +124,32 @@ namespace QuanLyKhachSan.GUI
 
         private void btn_ManagerialCustomer_Click(object sender, EventArgs e)
         {
-            frmManagerialCustomer fmc = new frmManagerialCustomer();
-            fmc.Show();
+            frmManagerialCustomer a = new frmManagerialCustomer();
+            a.Show();
         }
 
         private void btn_ManagerialEmp_Click(object sender, EventArgs e)
         {
-            frmManagerialEmp fme = new frmManagerialEmp();
-            fme.Show();
+            frmManagerialEmp a = new frmManagerialEmp();
+            a.Show();
         }
 
         private void btn_ManagerialService_Click(object sender, EventArgs e)
         {
-            frmManagerialService fms = new frmManagerialService();
-            fms.Show();
+            frmManagerialService a = new frmManagerialService();
+            a.Show();
         }
 
         private void btn_bookRoom_Click(object sender, EventArgs e)
         {
-            frmBookRoom fbr = new frmBookRoom();
-            fbr.Show();
+            frmBookRoom a = new frmBookRoom();
+            a.Show();
         }
 
         private void btn_checkInRoom_Click(object sender, EventArgs e)
         {
-            frmCheckInRoom fci = new frmCheckInRoom();
-            fci.Show();
-        }
-
-        private void btn_exit_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(0);
-        }
-
-        private void btn_Account_Click(object sender, EventArgs e)
-        {
-            frmAccount fa = new frmAccount();
-            fa.Show();
-        }
-
-        private void bunifuFlatButton6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuFlatButton7_Click(object sender, EventArgs e)
-        {
-            string check = showdataBill.SelectedRows[0].Cells[4].Value.ToString();
-            if (check == "Chưa thanh toán")
-            {
-                DialogResult dialogResult = MessageBox.Show("Bạn có chắc muốn thanh toán hóa đơn này không", "Thanh Toán", MessageBoxButtons.YesNo);
-                if (dialogResult == DialogResult.Yes)
-                {
-                    var query = @"UPDATE dbo.BILL
-SET IDStatusBill = 2
-WHERE ID = @billId";
-                    using (SqlConnection connection =
-                        new SqlConnection(Program.ConnectionString.getConnectionString(1)))
-                    {
-                        try
-                        {
-                            connection.Open();
-                            SqlCommand cmd = new SqlCommand(query , connection);
-                            cmd.Parameters.AddWithValue("@billId",
-                                showdataBill.SelectedRows[0].Cells[0].Value.ToString());
-                            cmd.ExecuteScalar();
-                            MessageBox.Show("Thành Công");
-                            btn_Bill_Click(null, null);
-                        }
-                        catch (Exception exception)
-                        {
-                            MessageBox.Show(exception.Message);
-                        }
-                    }
-                }
-            }
-            else
-            {
-                MessageBox.Show("Hóa đơn này đã thanh toán");
-            }
-        }
-
-        private void showDataRoom_SelectionChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void showDataRoom_DoubleClick(object sender, EventArgs e)
-        {
-            if (showDataRoom.SelectedRows[0].Cells[0].Value.ToString() == "Đang sử dụng")
-            {
-                int maPhong = 0;
-                try
-                {
-                    maPhong = Int32.Parse(showDataRoom.SelectedRows[0].Cells[0].Value.ToString());
-                }
-                catch (Exception exception)
-                {
-                    MessageBox.Show(exception.Message);
-                }
-                frmCheckInRoom frmcheck = new frmCheckInRoom(maPhong);
-                frmcheck.ShowDialog();
-            }
-            else
-            {
-                return;
-            }
+            frmCheckInRoom a = new frmCheckInRoom();
+            a.Show();
         }
     }
 }
