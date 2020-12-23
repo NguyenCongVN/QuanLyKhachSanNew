@@ -15,6 +15,7 @@ namespace QuanLyKhachSan.GUI
 {
     public partial class frmLogin : Form
     {
+        public static string MaNhanVien;
         internal static int checkConnectionString;
         internal static int checkLogin;
         public frmLogin()
@@ -30,73 +31,33 @@ namespace QuanLyKhachSan.GUI
         }
         private void btn_Login_Click_1(object sender, EventArgs e)
         {
-
-            string username = txt_user.Text;
-            string pass = txt_pass.Text;
-            if (username == "" || pass == "")
-            {
-                MessageBox.Show("Vui long nhap day du thong tin");
-            }
-            else
-            {
-
-                if (checkAccount(username, pass) == 1)
-                {
-
-
-                    frmHome a = new frmHome();
-                    this.Hide();
-                    a.ShowDialog();
-                    this.Close();
-                }
-
-                else MessageBox.Show("Lỗi . Mật khẩu không đúng");
-            }
-
-            
-        
-        }
-        private DataTable connectionTable()
-        {
-            DataTable data = new DataTable();
-            // create datatable connect database Users
-            string query = "SELECT UserName,PassWord FROM staff";
-            ConnectionString cnn = new ConnectionString();
-            string con = cnn.getConnectionString(frmLogin.checkConnectionString);
-            using (SqlConnection connection = new SqlConnection(con))
+            var query = @"SELECT COUNT(*) FROM dbo.STAFF
+            WHERE UserName = @userName AND PassWord = @passWord";
+            using (SqlConnection connection = new SqlConnection(Program.ConnectionString.getConnectionString(1)))
             {
                 connection.Open();
-                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
-                adapter.Fill(data);
-                connection.Close();
-            }
-
-            return data;
-        }
-        private int checkAccount(string name, string pass)
-        {
-            DataTable data = connectionTable();
-            for (int i = 0; i < data.Rows.Count; i++)
-            {
-
-                string tempName = data.Rows[i]["UserName"].ToString().Trim();
-                string tempPass = data.Rows[i]["PassWord"].ToString().Trim();
-                //  tempPass = tempPass.Trim();
-                //  tempName = tempName.Trim();
-                //  MessageBox.Show(tempPass + tempName);
-
-                if (name.Equals(tempName))
+                SqlCommand cmd = new SqlCommand(query , connection);
+                cmd.Parameters.AddWithValue("@userName", txt_user.Text);
+                cmd.Parameters.AddWithValue("@passWord", txt_pass.Text);
+                checkLogin = Int32.Parse(cmd.ExecuteScalar().ToString());
+                if (checkLogin > 0)
                 {
-
-                    if (pass.Equals(tempPass))
-                    {
-                        return 1;
-                    }
-
+                    MaNhanVien = txt_user.Text;
+                    frmHome fh = new frmHome();
+                    this.Hide();
+                    fh.ShowDialog(); 
                 }
-
+                else
+                {
+                    MessageBox.Show("Đăng Nhập Thất Bại!");
+                }
             }
-            return 0;
+        }
+
+        private void gunaControlBox1_Click(object sender, EventArgs e)
+        {
+            //duy update
+            Application.Exit();
         }
     }
 }
